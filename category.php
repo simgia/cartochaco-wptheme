@@ -5,7 +5,7 @@
 <div class="section-title">
 	<div class="container">
 		<div class="twelve columns">
-			<h2><?php single_cat_title(); ?></H2>
+			<h2><?php single_cat_title(); ?></h2>
 		</div>
 	</div>
 </div>

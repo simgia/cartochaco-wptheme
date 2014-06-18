@@ -57,6 +57,20 @@ function jeo_theme_scripts() {
 	wp_register_script('jquery-isotope', get_template_directory_uri() . '/lib/jquery.isotope.min.js', array('jquery'), '1.5.25');
 
 	wp_register_script('jeo-site', get_template_directory_uri() . '/js/site.js', array('jquery', 'jquery-isotope'));
+
+        // Submit CSS.
+        wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3');
+
+        // Submit JS.
+        wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
+
+        wp_localize_script('submit-story', 'infoamazonia_submit', array(
+		'ajaxurl' => admin_url('admin-ajax.php'),
+		'success_label' => __('Success! Thank you, your story will be reviewed by one of our editors and soon will be online.', 'jeo'),
+		'redirect_label' => __('You\'re being redirect to the home page in 4 seconds.', 'jeo'),
+		'home' => home_url('/'),
+		'error_label' => __('Oops, please try again in a few minutes.', 'jeo')
+	));
 }
 add_action('wp_enqueue_scripts', 'jeo_theme_scripts', 5);
 
@@ -64,10 +78,16 @@ function jeo_enqueue_theme_scripts() {
 	if(wp_style_is('jeo-main', 'registered'))
 		wp_enqueue_style('jeo-main');
 
+        if(wp_style_is('submit_story_css', 'registered'))
+		wp_enqueue_style('submit_story_css');
+
 	if(wp_script_is('jeo-site', 'registered'))
 		wp_enqueue_script('jeo-site');
+       
+        if(wp_script_is('submit-story', 'registered'))
+		wp_enqueue_script('submit-story');
 
-	 if (is_singular())
+	if (is_singular())
 	 	wp_enqueue_script( "comment-reply" );
 
 }
@@ -142,4 +162,143 @@ function jeo_comment( $comment, $args, $depth ) {
 		break;
 	endswitch; // end comment_type check
 }
+
+/*
+// custom marker data
+function infoamazonia_marker_data($data) {
+	global $post;
+
+	$permalink = $data['url'];
+        
+	if(function_exists('qtrans_getLanguage'))
+		$permalink = qtrans_convertURL($data['url'], qtrans_getLanguage());
+       
+	$data['permalink'] = $permalink;
+	$data['url'] = get_post_meta($post->ID, 'url', true);
+	$data['content'] = infoamazonia_strip_content_media();
+	$data['slideshow'] = infoamazonia_get_content_media();
+	// source
+	$publishers = get_the_terms($post->ID, 'publisher');
+	if($publishers) {
+		$publisher = array_shift($publishers);
+		$data['source'] = apply_filters('single_cat_title', $publisher->name);
+	}
+	// thumbnail
+	$data['thumbnail'] = infoamazonia_get_thumbnail();
+	return $data;
+}
+add_filter('jeo_marker_data', 'infoamazonia_marker_data');
+*/
+
+function infoamazonia_get_thumbnail($post_id = false) {
+	global $post;
+	$post_id = $post_id ? $post_id : $post->ID;
+	$thumb_src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumb');
+	if($thumb_src)
+		return $thumb_src[0];
+	else
+		return get_post_meta($post->ID, 'picture', true);
+}
+
+// Ajax calendar.
+//include(STYLESHEETPATH . '/inc/ajax-calendar.php');
+
+// Geocode box.
+include(STYLESHEETPATH . '/inc/geocode-box.php');
+
+// Submit story.
+include(STYLESHEETPATH . '/inc/submit-story.php');
+
+// Remove page from search result.
+function infoamazonia_remove_page_from_search($query) {
+	if($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+	return $query;
+}
+add_filter('pre_get_posts', 'infoamazonia_remove_page_from_search');
+
+// Metaboxes.
+include(STYLESHEETPATH . '/inc/metaboxes/metaboxes.php');
+
+// Register taxonomies.
+include(STYLESHEETPATH . '/inc/taxonomies.php');
+
+// Taxonomy meta.
+include(STYLESHEETPATH . '/inc/taxonomies-meta.php');
+
+// Search placeholder.
+function infoamazonia_search_placeholder() {
+	global $wp_the_query;
+	$placeholder = __('Search for stories', 'jeo');
+	if($wp_the_query->is_singular(array('map', 'map-group')))
+		$placeholder = __('Search for stories on this map', 'jeo');
+	elseif($wp_the_query->is_tax('publisher'))
+		$placeholder = __('Search for stories on this publisher', 'jeo');
+
+	return $placeholder;
+}
+
+/*
+function infoamazonia_before_embed() {
+	remove_action('wp_footer', 'infoamazonia_submit');
+	remove_action('wp_footer', 'infoamazonia_geocode_box');
+}
+add_action('jeo_before_embed', 'infoamazonia_before_embed');
+
+function infoamazonia_embed_type($post_types) {
+	if(get_query_var('embed')) {
+		$post_types = 'map';
+	}
+	return $post_types;
+}
+add_filter('jeo_featured_map_type', 'infoamazonia_embed_type');
+*/
+
+/*
+ * Advanced Custom Fields.
+ */
+function cartochaco_acf_dir() {
+	return get_stylesheet_directory_uri() . '/inc/acf/';
+}
+add_filter('acf/helpers/get_dir', 'cartochaco_acf_dir');
+
+function cartochaco_acf_date_time_picker_dir() {
+	return cartochaco_acf_dir() . '/add-ons/acf-field-date-time-picker/';
+}
+add_filter('acf/add-ons/date-time-picker/get_dir', 'cartochaco_acf_date_time_picker_dir');
+
+function cartochaco_acf_repeater_dir() {
+	return cartochaco_acf_dir() . '/add-ons/acf-repeater/';
+}
+add_filter('acf/add-ons/repeater/get_dir', 'cartochaco_acf_repeater_dir');
+
+define('ACF_LITE', true);
+require_once(STYLESHEETPATH . '/inc/acf/acf.php');
+
+/*
+ * Datasets.
+ */
+include(STYLESHEETPATH . '/inc/datasets.php');
+
+function cartochaco_setup() {
+	add_theme_support('post-thumbnails');
+	add_image_size('post-thumb', 360, 121, true);
+	add_image_size('map-thumb', 200, 200, true);
+
+	// text domain
+	load_child_theme_textdomain('cartochaco', get_stylesheet_directory() . '/languages');
+
+	//sidebars
+	register_sidebar(array(
+		'name' => __('Main widgets', 'jeo'),
+		'id' => 'main-sidebar',
+		'description' => __('Widgets used on front and inside pages.', 'jeo'),
+		'before_widget' => '<div class="four columns row">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+}
+add_action('after_setup_theme', 'cartochaco_setup');
 ?>

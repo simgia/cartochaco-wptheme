@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: MapPress 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27 17:20-0300\n"
-"PO-Revision-Date: 2013-11-27 17:22-0300\n"
-"Last-Translator: Vitor George <vitor.george@gmail.com>\n"
+"PO-Revision-Date: 2014-06-12 15:06-0400\n"
+"Last-Translator: Simgia <josego@simgia.com>\n"
 "Language-Team: Cardume <contato@cardume.art.br>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
@@ -13,44 +13,50 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:7
 msgid "404 - Page not found"
-msgstr ""
+msgstr "Página no encontrada"
 
 #: ../404.php:13
 msgid "Trying searching:"
 msgstr ""
 
-#: ../archive.php:10
+#: ../archive.php:10 ../section-subheader.php:61
 #, php-format
 msgid "Daily Archives: %s"
-msgstr ""
+msgstr "Archivo para el día: %s"
 
-#: ../archive.php:12
+#: ../archive.php:12 ../section-subheader.php:63
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr ""
+msgstr "Archivos por mes: %s"
 
-#: ../archive.php:12
+#: ../archive.php:12 ../section-subheader.php:63
 msgctxt "monthly archives date format"
 msgid "F Y"
-msgstr ""
+msgstr "F, Y"
 
-#: ../archive.php:14
+#: ../archive.php:14 ../section-subheader.php:65
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr ""
+msgstr "Archivos del año: %s"
 
-#: ../archive.php:14
+#: ../archive.php:14 ../section-subheader.php:65
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
-#: ../archive.php:16
+#: ../archive.php:16 ../section-subheader.php:67
 msgid "Archives"
+msgstr "Archivos"
+
+#: ../archive-dataset.php:11 ../taxonomy-license.php:11 ../inc/datasets.php:19
+#: ../inc/datasets.php:29
+msgid "Datasets"
 msgstr ""
 
 #: ../content-embed.php:16
@@ -65,9 +71,10 @@ msgstr ""
 msgid "by"
 msgstr ""
 
-#: ../content-featured.php:32 ../loop.php:22
+#: ../content-featured.php:32 ../loop.php:22 ../taxonomy-license.php:23
+#: ../single.php:45
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
 
 #: ../content-featured.php:43
 msgid "Go to"
@@ -80,7 +87,7 @@ msgstr "Más…"
 #: ../content-map-group.php:37 ../content-share.php:108
 #: ../content-share.php:114
 msgid "View all maps"
-msgstr ""
+msgstr "Ver todos los mapas"
 
 #: ../content-marker-bubble.php:6
 msgctxt "map bubble date format"
@@ -89,127 +96,132 @@ msgstr "d/m/Y"
 
 #: ../content-share.php:4 ../inc/share-widget.php:150
 msgid "Share a map"
-msgstr ""
+msgstr "Comparte un mapa"
 
 #: ../content-share.php:9 ../content-share.php:225
 msgid "Share"
-msgstr ""
+msgstr "Compartir"
 
 #: ../content-share.php:20
 msgid "Share the map"
-msgstr ""
+msgstr "Comparte el mapa"
 
 #: ../content-share.php:59
 msgid "Choose a map"
-msgstr ""
+msgstr "Elija un mapa"
 
 #: ../content-share.php:63
 msgid "Choose any map from the list"
-msgstr ""
+msgstr "Elija cualquier mapa de la lista"
 
 #: ../content-share.php:68
 msgid "Select a map"
-msgstr ""
+msgstr "Seleccione un mapa"
 
 #: ../content-share.php:74
 msgid "Select layers from this map"
-msgstr ""
+msgstr "Selección de capas a partir de este mapa"
 
 #: ../content-share.php:81 ../content-share.php:83 ../content-share.php:94
 msgid "Select layers"
-msgstr ""
+msgstr "Selección de capas"
 
 #: ../content-share.php:88
 msgid "Choose any layers from the list"
-msgstr ""
+msgstr "Elija cualquiera de las capas de la lista"
 
 #: ../content-share.php:106
 msgid "Back to default layer configuration"
-msgstr ""
+msgstr "Volver a la configuración de la capa por defecto"
 
 #: ../content-share.php:127
 msgid "Filter content"
-msgstr ""
+msgstr "Filtrar contenido"
 
 #: ../content-share.php:131
 msgid "Filter the content displayed on the map through our options"
 msgstr ""
+"Filtrar el contenido que se muestra en el mapa a través de nuestras opciones"
 
 #: ../content-share.php:136
 msgid "Select content"
-msgstr ""
+msgstr "Seleccione el contenido"
 
 #: ../content-share.php:141
 msgid "Selected content"
-msgstr ""
+msgstr "Contenido seleccionado"
 
 #: ../content-share.php:146
 msgid "General content"
-msgstr ""
+msgstr "Contenido general"
 
 #: ../content-share.php:147
 msgid "Content from the map"
-msgstr ""
+msgstr "Contenido del mapa"
 
 #: ../content-share.php:147
 msgid "Latest content"
-msgstr ""
+msgstr "Últimos contenidos"
 
 #: ../content-share.php:148
 msgid "No content (map only)"
-msgstr ""
+msgstr "Ningún contenido (mapa solamente)"
 
 #: ../content-share.php:156
 msgid "By"
-msgstr ""
+msgstr "Por"
 
 #: ../content-share.php:173
 msgid "Width & Height"
-msgstr ""
+msgstr "Ancho & alto"
 
 #: ../content-share.php:177
 msgid "Select the width and height proportions you would like to embed to be."
-msgstr ""
+msgstr "Seleccione las proporciones de ancho y alto que le gustaría incrustar."
 
 #: ../content-share.php:182
 msgid "Small"
-msgstr ""
+msgstr "Pequeño"
 
 #: ../content-share.php:183
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #: ../content-share.php:184
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: ../content-share.php:194
 msgid "HTML Output"
-msgstr ""
+msgstr "Salida HTML"
 
 #: ../content-share.php:198
 msgid ""
 "Copy and paste this code into an HTML page to embed with it's current "
 "settings and location"
 msgstr ""
+"Copie y pegue este código en una página HTML para incrustar a su actual "
+"configuración y ubicación"
 
 #: ../content-share.php:207
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ../content-share.php:211
 msgid "Get the original to use as a link or a custom embed."
 msgstr ""
+"Consiga el original para utilizar como enlace o un incrustado personalizado."
 
 #: ../content-share.php:229
 msgid ""
 "Share this map, with it's current settings and location, on your social "
 "network"
 msgstr ""
+"Comparte este mapa, con la actual configuración y ubicación, en su red social"
 
 #: ../content-share.php:245
 msgid "Map preview"
-msgstr ""
+msgstr "Mapa de previsualización"
 
 #: ../footer.php:10
 #, php-format
@@ -239,9 +251,45 @@ msgstr ""
 msgid "Front page"
 msgstr ""
 
+#: ../functions.php:69
+msgid ""
+"Success! Thank you, your story will be reviewed by one of our editors and "
+"soon will be online."
+msgstr ""
+"¡Gracias! Tu artículo será revisado por uno de nuestros editores y luego "
+"online"
+
+#: ../functions.php:70
+msgid "You're being redirect to the home page in 4 seconds."
+msgstr "Estás siendo redireccionado a la página de inicio en 4 segundos."
+
+#: ../functions.php:72
+msgid "Oops, please try again in a few minutes."
+msgstr "Por favor, vuelve a intentarlo en unos minutos."
+
+#: ../functions.php:192
+msgid "Search for stories"
+msgstr "Buscar noticias"
+
+#: ../functions.php:194
+msgid "Search for stories on this map"
+msgstr "Buscar historias en este mapa"
+
+#: ../functions.php:196
+msgid "Search for stories on this publisher"
+msgstr "Buscar historias en este editor"
+
 #: ../index.php:18
 msgid "Latest articles"
 msgstr ""
+
+#: ../loop-dataset.php:12
+msgid "download data"
+msgstr "descargar dato"
+
+#: ../loop-dataset.php:12
+msgid "read me"
+msgstr "léeme"
 
 #: ../search.php:8
 #, fuzzy
@@ -252,9 +300,45 @@ msgstr "resultados"
 msgid "Search here..."
 msgstr "Hacer búsqueda…"
 
-#: ../single-map.php:9
-msgid "Latest articles on"
-msgstr ""
+#: ../single.php:98
+msgid "Related posts"
+msgstr "Posts relacionados"
+
+#: ../single-map.php:19
+msgid "Stories on"
+msgstr "Historias de"
+
+#: ../section-subheader.php:6
+msgid "Choose a publisher"
+msgstr "Elige un editor"
+
+#: ../section-subheader.php:22
+msgid "All stories"
+msgstr "Todas las noticias"
+
+#: ../section-subheader.php:46
+msgid "Nothing found for: "
+msgstr "No hay noticias por la búsqueda:"
+
+#: ../section-subheader.php:48
+msgid "Search results for: "
+msgstr "Resultados de la búsqueda para:"
+
+#: ../section-publisher-description.php:10
+msgid "Visit"
+msgstr "Visitar"
+
+#: ../single-dataset.php:28
+msgid "Preview data"
+msgstr "Vista previa de datos"
+
+#: ../taxonomy-license.php:36
+msgid "Sources"
+msgstr "Fuentes"
+
+#: ../taxonomy-license.php:46
+msgid "Licenses"
+msgstr "Licencias"
 
 #: ../inc/api.php:35
 msgid "GeoJSON API"
@@ -305,12 +389,13 @@ msgid "Nothing found, try something else."
 msgstr "No se ha encontrado."
 
 #: ../inc/core.php:152 ../inc/core.php:162 ../inc/admin/settings.php:25
+#: ../archive-map:10
 msgid "Maps"
-msgstr ""
+msgstr "Mapas"
 
 #: ../inc/core.php:153
 msgid "Map"
-msgstr ""
+msgstr "Mapa"
 
 #: ../inc/core.php:154 ../inc/core.php:155
 msgid "Add new map"
@@ -395,6 +480,158 @@ msgstr ""
 #: ../inc/core.php:490
 msgid "Click here to create your first"
 msgstr ""
+
+#: ../inc/datasets.php:20
+msgid "Dataset"
+msgstr ""
+
+#: ../inc/datasets.php:21
+msgid "Add dataset"
+msgstr "Agregar dataset"
+
+#: ../inc/datasets.php:22
+msgid "Add new dataset"
+msgstr "Añadir nuevo dataset"
+
+#: ../inc/datasets.php:23
+msgid "Edit dataset"
+msgstr "Editar dataset"
+
+#: ../inc/datasets.php:24
+msgid "New dataset"
+msgstr "Nuevo dataset"
+
+#: ../inc/datasets.php:25
+msgid "View dataset"
+msgstr "Ver dataset"
+
+#: ../inc/datasets.php:26
+msgid "Search dataset"
+msgstr "Búsqueda dataset"
+
+#: ../inc/datasets.php:27
+msgid "No dataset found"
+msgstr "No se han encontrado dataset"
+
+#: ../inc/datasets.php:28
+msgid "No dataset found in the trash"
+msgstr "No se han encontrado dataset en la papelera"
+
+#: ../inc/datasets.php:35
+msgid "CartoChaco Datasets"
+msgstr ""
+
+# msgid ""
+# msgstr ""
+# msgid ""
+# msgstr ""
+#: ../inc/datasets.php:51 ../inc/datasets.php:52 ../inc/datasets.php:53
+msgid "All licenses"
+msgstr "Todas las licencias"
+
+#: ../inc/datasets.php:54
+msgid "Edit license"
+msgstr "Editar licencia"
+
+#: ../inc/datasets.php:55
+msgid "View license"
+msgstr "Ver licencia"
+
+#: ../inc/datasets.php:56
+msgid "Update license"
+msgstr "Actualizar licencia"
+
+#: ../inc/datasets.php:57
+msgid "Add new license"
+msgstr "Añadir nueva licencia"
+
+#: ../inc/datasets.php:58
+msgid "New license name"
+msgstr "Nuevo nombre de la licencia"
+
+#: ../inc/datasets.php:59 ../inc/datasets.php:60
+msgid "Parent license"
+msgstr "Licencia Padre"
+
+#: ../inc/datasets.php:61
+msgid "Search licenses"
+msgstr "Búsqueda licencias"
+
+#: ../inc/datasets.php:62
+msgid "Popular licenses"
+msgstr "Licencias populares"
+
+#: ../inc/datasets.php:63
+msgid "Separate licenses with commas"
+msgstr "Separar licencias con comas"
+
+#: ../inc/datasets.php:64
+msgid "Add or remove licenses"
+msgstr "Agregar o quitar licencias"
+
+#: ../inc/datasets.php:65
+msgid "Choose from most used licenses"
+msgstr "Elija entre las licencias más usadas"
+
+#: ../inc/datasets.php:66
+msgid "No licenses found"
+msgstr "No se han encontrado licencias"
+
+# msgid ""
+# msgstr ""
+# msgid ""
+# msgstr ""
+#: ../inc/datasets.php:81 ../inc/datasets.php:82 ../inc/datasets.php:83
+msgid "All sources"
+msgstr "Todas las fuentes"
+
+#: ../inc/datasets.php:84
+msgid "Edit source"
+msgstr "Editar fuente"
+
+#: ../inc/datasets.php:85
+msgid "View source"
+msgstr "Ver fuente"
+
+#: ../inc/datasets.php:86
+msgid "Update source"
+msgstr "Actualizar fuente"
+
+#: ../inc/datasets.php:87
+msgid "Add new source"
+msgstr "Añadir nueva fuente"
+
+#: ../inc/datasets.php:88
+msgid "New source name"
+msgstr "Nuevo nombre de la fuente"
+
+#: ../inc/datasets.php:89 ../inc/datasets.php:90
+msgid "Parent source"
+msgstr "Fuente Padre"
+
+#: ../inc/datasets.php:91
+msgid "Search sources"
+msgstr "Búsqueda fuentes"
+
+#: ../inc/datasets.php:92
+msgid "Popular sources"
+msgstr "Fuentes populares"
+
+#: ../inc/datasets.php:93
+msgid "Separate sources with commas"
+msgstr "Separar fuentes con comas"
+
+#: ../inc/datasets.php:94
+msgid "Add or remove sources"
+msgstr "Agregar o quitar fuentes"
+
+#: ../inc/datasets.php:95
+msgid "Choose from most used sources"
+msgstr "Elija entre las fuentes más usadas"
+
+#: ../inc/datasets.php:96
+msgid "No sources found"
+msgstr "No se han encontrado fuentes"
 
 #: ../inc/featured.php:96
 msgid "Featured content"
@@ -591,11 +828,11 @@ msgstr "Encontrar una localización"
 
 #: ../inc/markers.php:416
 msgid "Full address"
-msgstr ""
+msgstr "Dirección completa"
 
 #: ../inc/markers.php:417
 msgid "Find"
-msgstr ""
+msgstr "Encontrar"
 
 #: ../inc/markers.php:422
 msgid "Drag the marker for a more precise result"
@@ -603,15 +840,15 @@ msgstr ""
 
 #: ../inc/markers.php:426
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: ../inc/markers.php:428
 msgid "Latitude"
-msgstr ""
+msgstr "Latitud"
 
 #: ../inc/markers.php:431
 msgid "Longitude"
-msgstr ""
+msgstr "Longitud"
 
 #: ../inc/markers.php:536
 msgctxt "reduced date format"
@@ -686,9 +923,156 @@ msgid ""
 "\">Check it out</a>."
 msgstr ""
 
+#: ../inc/submit-story.php:13 ../inc/geocode-box.php:17
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../inc/submit-story.php:14 ../inc/submit-story.php:21
+msgid "Submit full story"
+msgstr "Envíe una historia completa"
+
+#: ../inc/submit-story.php:15
+msgid ""
+"Do you have news to share from the Amazon? Contribute to this map by "
+"submitting your story. Help broaden the understanding of the global impact "
+"of this important region in the world."
+msgstr ""
+"¿Tienes alguna noticia para compartir sobre la Amazonia? Contribuya a este "
+"mapa enviando un reportaje. Ayude a ampliar el entendimiento del impacto "
+"global de esta importante región."
+
+#: ../inc/submit-story.php:20
+msgid "Submit a url"
+msgstr "Envíe una URL"
+
+#: ../inc/submit-story.php:27 ../inc/submit-story.php:86
+msgid "Your full name"
+msgstr "Nombre completo"
+
+#: ../inc/submit-story.php:31 ../inc/submit-story.php:90
+msgid "E-mail"
+msgstr "Email"
+
+#: ../inc/submit-story.php:35 ../inc/metaboxes/story/story-meta.php:36
+msgid "Reporter"
+msgstr "Reportero"
+
+#: ../inc/submit-story.php:39
+msgid "Story title"
+msgstr "Título de la noticia"
+
+#: ../inc/submit-story.php:43
+msgid "Story text"
+msgstr "Texto de la noticia"
+
+#: ../inc/submit-story.php:47 ../inc/submit-story.php:94
+#: ../inc/metaboxes/story/story-meta.php:40
+msgid "Story url"
+msgstr "Link para la noticia"
+
+#: ../inc/submit-story.php:51 ../inc/metaboxes/story/story-meta.php:44
+msgid "Lead picture"
+msgstr "Imagen principal"
+
+#: ../inc/submit-story.php:56 ../inc/submit-story.php:99
+msgid "Story location"
+msgstr "Localización de la noticia"
+
+#: ../inc/submit-story.php:58 ../inc/submit-story.php:100
+msgid "Find location on map"
+msgstr "Encontrar localización en el mapa"
+
+#: ../inc/submit-story.php:63 ../inc/submit-story.php:105
+msgid "Latitude:"
+msgstr "Latitud:"
+
+#: ../inc/submit-story.php:64 ../inc/submit-story.php:106
+msgid "Longitude:"
+msgstr "Longitud:"
+
+#: ../inc/submit-story.php:73 ../inc/metaboxes/story/story-meta.php:48
+msgid "Publishing date"
+msgstr "Fecha de publicacion"
+
+#: ../inc/submit-story.php:77 ../inc/metaboxes/story/story-meta.php:52
+msgid "Notes to the CartoChaco editor"
+msgstr "Notas para el editor de CartoChaco"
+
+#: ../inc/submit-story.php:80 ../inc/submit-story.php:114
+msgid "Send story"
+msgstr "Enviar noticia"
+
+#: ../inc/submit-story.php:135
+msgid "Missing information. Please fill all the required fields!"
+msgstr "Completa todos los campos obligatorios"
+
+#: ../inc/submit-story.php:144
+msgid "Could not save submission"
+msgstr "No es posible guardar el envío"
+
 #: ../inc/streetview.php:37
 msgid "Use Google Street View"
 msgstr ""
+
+#: ../inc/taxonomies.php:9 ../inc/taxonomies.php:23
+msgid "Publishers"
+msgstr "Editores"
+
+#: ../inc/taxonomies.php:10
+msgid "Publisher"
+msgstr "Editor"
+
+#: ../inc/taxonomies.php:11
+msgid "Search publishers"
+msgstr "Búsqueda editores"
+
+#: ../inc/taxonomies.php:12
+msgid "Popular publishers"
+msgstr "Editores populares"
+
+#: ../inc/taxonomies.php:13
+msgid "All publishers"
+msgstr "Todos los editores"
+
+#: ../inc/taxonomies.php:14 ../inc/taxonomies.php:15
+msgid "Parent publisher"
+msgstr "Editor padre"
+
+#: ../inc/taxonomies.php:16
+msgid "Edit publisher"
+msgstr "Editar editor"
+
+#: ../inc/taxonomies.php:17
+msgid "Update publisher"
+msgstr "Actualizar editor"
+
+#: ../inc/taxonomies.php:18
+msgid "Add new publisher"
+msgstr "Añadir nuevo editor"
+
+#: ../inc/taxonomies.php:19
+msgid "New publisher name"
+msgstr "Nuevo nombre de editor"
+
+#: ../inc/taxonomies.php:20
+msgid "Separate publishers with commas"
+msgstr "Separe editores con comas"
+
+#: ../inc/taxonomies.php:21
+msgid "Add or remove publishers"
+msgstr "Añadir o eliminar editores"
+
+#: ../inc/taxonomies.php:22
+msgid "Choose from most used publishers"
+msgstr "Elija entre los editores más utilizados"
+
+#: ../inc/taxonomies-meta.php:10
+msgid "Publisher information"
+msgstr "Información del editor"
+
+#: ../inc/taxonomies-meta.php:17
+msgid "Publisher url"
+msgstr "URL del editor"
 
 #: ../inc/ui.php:16
 msgid "Locate on map"
@@ -916,6 +1300,10 @@ msgstr ""
 msgid "Post types to enable map functionalities"
 msgstr ""
 
+#: ../inc/geocode-box.php:19
+msgid "Finish geocoding"
+msgstr "Termine la geocodificación"
+
 #: ../metaboxes/map-relation/map-relation.php:9
 msgid "Set maps for this post"
 msgstr ""
@@ -1116,6 +1504,18 @@ msgstr ""
 #: ../metaboxes/mapgroup/mapgroup.php:54
 msgid "Add map"
 msgstr ""
+
+#: ../inc/metaboxes/story/story-meta.php:9
+msgid "Story data"
+msgstr "Datos del artículo"
+
+#: ../inc/metaboxes/story/story-meta.php:28
+msgid "Author name"
+msgstr "Nombre del autor"
+
+#: ../inc/metaboxes/story/story-meta.php:32
+msgid "Author email"
+msgstr "Email del autor"
 
 #~ msgid "Layer title"
 #~ msgstr "Layer título"

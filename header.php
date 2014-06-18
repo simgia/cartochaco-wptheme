@@ -35,14 +35,26 @@
 					</h1>
 					<h2><?php bloginfo('description'); ?></h2>
 				</div>
+                <!-- Comentado por josego. Creo que yo coloque para la traduccion de los idiomas. No recuerdo bien
+                <?php
+				 //    $lang = '';
+				 //     if(function_exists('qtrans_getLanguage'))
+					// $lang = qtrans_getLanguage();
+				?>
+                                //-->     
 			</div>
 			<div class="eight columns">
+				<div class="social">
+					<a href="" class="tw" title="Twitter">Twitter</a> <a href="" class="fb" title="Facebook">Facebook</a>
+				</div>
+				
+				<?php get_search_form(); ?>
+
 				<div id="masthead-nav">
 					<div class="clearfix">
 						<nav id="main-nav">
 							<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
 						</nav>
-						<?php get_search_form(); ?>
 					</div>
 				</div>
 			</div>

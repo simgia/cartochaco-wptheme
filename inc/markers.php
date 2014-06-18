@@ -572,7 +572,7 @@ class JEO_Markers {
 		$lon = get_post_meta($post_id, 'geocode_longitude', true);
 
 		if($lat && is_numeric($lat) && $lon && is_numeric($lon))
-			$coordinates = array(floatval($lon), floatval($lat));
+			$coordinates = array($lon, $lat);
 		else
 			$coordinates = false;
 

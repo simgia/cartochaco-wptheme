@@ -35,105 +35,96 @@ if($allow_layers) {
 		}
 	}
 }
-
-// post
-$post_id = false;
-if(isset($_GET['p']))
-	$post_id = $_GET['p'];
-
-// share url
-if($post_id) {
-	$share_url = jeo_get_share_url(array('p' => $post_id));
-} else {
-	$share_url = jeo_get_share_url();
-}
 ?>
 
 <section id="content" class="share-page">
-	<header class="page-header">
+
+	<header class="single-post-header">
 		<div class="container">
 			<div class="twelve columns">
 				<h1><?php echo $page_title; ?></h1>
 			</div>
 		</div>
 	</header>
+
 	<div id="jeo-share-widget">
 		<div id="configuration">
+			
 			<div class="container row">
-				<?php
 
+				<?php
 				if(count($maps) > 1 || ($map && $layers)) :
-					?>
-					<div class="section layer three columns">
-						<div class='inner'>
-							<?php if(!$map) : ?>
-								<h4>
-									<?php _e('Choose a map', 'jeo'); ?>
-									<a class='tip' href='#'>
-										?
-										<span class="popup arrow-left">
-											<?php _e('Choose any map from the list', 'jeo'); ?>
-										</span>
-									</a>
-								</h4>
-								<div id='maps'>
-									<select id="map-select" data-placeholder="<?php _e('Select a map', 'jeo'); ?>" class="chzn-select">
-										<?php foreach($maps as $map) : ?>
-											<option value="<?php echo $map->ID; ?>"><?php echo get_the_title($map->ID); ?></option>
+				?>
+				<div class="section layer four columns">
+					<div class='inner'>
+						<?php if(!$map) : ?>
+							<h4>
+								<?php _e('Choose a map', 'jeo'); ?>
+								<a class='tip' href='#'>
+									?
+									<span class="popup arrow-left">
+										<?php _e('Choose any map from the list', 'jeo'); ?>
+									</span>
+								</a>
+							</h4>
+							<div id='maps'>
+								<select id="map-select" data-placeholder="<?php _e('Select a map', 'jeo'); ?>" class="chzn-select">
+									<?php foreach($maps as $map) : ?>
+										<option value="<?php echo $map->ID; ?>"><?php echo get_the_title($map->ID); ?></option>
+									<?php endforeach; ?>
+								</select>
+								<?php if($allow_layers) : ?>
+									<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'jeo'); ?></a>
+								<?php endif; ?>
+							</div>
+						<?php elseif($map && $layers) : ?>
+							<?php $map_id = $map->ID; ?>
+							<h4>
+								<?php if(!isset($_GET['layers'])) : ?>
+									<?php echo __('Select layers', 'jeo'); ?>
+								<?php else : ?>
+									<?php _e('Select layers', 'jeo'); ?>
+								<?php endif; ?>
+								<a class="tip" href="#">
+									?
+									<span class="popup arrow-left">
+										<?php _e('Choose any layers from the list', 'jeo'); ?>
+									</span>
+								</a>
+							</h4>
+							<div id="maps">
+								<?php if($layers) : ?>
+									<select id="layers-select" data-placeholder="<?php _e('Select layers', 'jeo'); ?>" data-mapid="<?php echo $map_id; ?>" class="chzn-select" multiple>
+										<?php foreach($layers as $layer) : ?>
+											<?php
+											if(!is_array($layer)) :
+												$l = array('id' => $layer, 'title' => $layer);
+												$layer = $l;
+											endif;
+											?>
+											<option value="<?php echo $layer['id']; ?>" selected><?php if($layer['title']) : echo $layer['title']; else : echo $layer['id']; endif; ?></option>
 										<?php endforeach; ?>
 									</select>
-									<?php if($allow_layers) : ?>
-										<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'jeo'); ?></a>
-									<?php endif; ?>
-								</div>
-							<?php elseif($map && $layers) : ?>
-								<?php $map_id = $map->ID; ?>
-								<h4>
-									<?php if(!isset($_GET['layers'])) : ?>
-										<?php echo __('Select layers', 'jeo'); ?>
-									<?php else : ?>
-										<?php _e('Select layers', 'jeo'); ?>
-									<?php endif; ?>
-									<a class="tip" href="#">
-										?
-										<span class="popup arrow-left">
-											<?php _e('Choose any layers from the list', 'jeo'); ?>
-										</span>
-									</a>
-								</h4>
-								<div id="maps">
-									<?php if($layers) : ?>
-										<select id="layers-select" data-placeholder="<?php _e('Select layers', 'jeo'); ?>" data-mapid="<?php echo $map_id; ?>" class="chzn-select" multiple>
-											<?php foreach($layers as $layer) : ?>
-												<?php
-												if(!is_array($layer)) :
-													$l = array('id' => $layer, 'title' => $layer);
-													$layer = $l;
-												endif;
-												?>
-												<option value="<?php echo $layer['id']; ?>" selected><?php if($layer['title']) : echo $layer['title']; else : echo $layer['id']; endif; ?></option>
-											<?php endforeach; ?>
-										</select>
-									<?php endif; ?>
-									<a class="clear-layers" href="#"><?php _e('Back to default layer configuration', 'jeo'); ?></a>
-									<?php if(count($maps) > 1) : ?>
-										<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
-									<?php endif; ?>
-								</div>
-							<?php else : ?>
-								<h4>&nbsp;</h4>
-								<input type="hidden" id="map_id" name="map_id" value="<?php echo $map->ID; ?>" />
-								<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
-							<?php endif; ?>
-						</div>
+								<?php endif; ?>
+								<a class="clear-layers" href="#"><?php _e('Back to default layer configuration', 'jeo'); ?></a>
+								<?php if(count($maps) > 1) : ?>
+									<p><a class="button" href="<?php echo remove_query_arg('map_id'); ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
+								<?php endif; ?>
+							</div>
+						<?php else : ?>
+							<h4>&nbsp;</h4>
+							<input type="hidden" id="map_id" name="map_id" value="<?php echo $map->ID; ?>" />
+							<p><a class="button" href="<?php echo jeo_get_share_url(); ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
+						<?php endif; ?>
 					</div>
+				</div>
 				<?php endif; ?>
 
 				<?php
 				$taxonomies = jeo_get_share_widget_taxonomies();
 				?>
 
-				<div class="section two columns">
+				<div class="section four columns">
 					<div class="inner">
 						<h4>
 							<?php _e('Filter content', 'jeo'); ?>
@@ -179,7 +170,7 @@ if($post_id) {
 					</div>
 				</div>
 
-				<div class='section size three columns'>
+				<div class='section size four columns'>
 					<div class='inner'>
 						<h4>
 							<?php _e('Width & Height', 'jeo'); ?>
@@ -198,7 +189,11 @@ if($post_id) {
 					</div>
 				</div>
 
-				<div class='section output two columns'>
+			</div>
+
+			<div class="container row">
+
+				<div class='section output four columns'>
 					<div class='inner'>
 						<h4>
 							<div class='popup arrow-right'>
@@ -212,24 +207,27 @@ if($post_id) {
 							</a>
 						</h4>
 						<textarea id="output"></textarea>
-                        <div class="sub-inner">                        
-                            <h5>
-                                <div class='popup arrow-right'>
-                                </div>
-                                <?php _e('URL', 'jeo'); ?>
-                                <a class='tip' href='#'>
-                                    ?
-                                    <span class="popup arrow-left">
-                                        <?php _e('Get the original to use as a link or a custom embed.', 'jeo'); ?>
-                                    </span>
-                                </a>
-                            </h5>
-                            <input type="text" id="url-output" />
-                        </div>
 					</div>
 				</div>
 
-				<div class="section social two columns">
+				<div class='section output four columns'>
+					<div class='inner'>
+						<h4>
+                            <div class='popup arrow-right'>
+                            </div>
+                            <?php _e('URL', 'jeo'); ?>
+                            <a class='tip' href='#'>
+                                ?
+                                <span class="popup arrow-left">
+                                    <?php _e('Get the original to use as a link or a custom embed.', 'jeo'); ?>
+                                </span>
+                            </a>
+                        </h4>
+                        <input type="text" id="url-output" />
+					</div>
+				</div>
+
+				<div class="section social four columns">
 					<div class="inner">
 						<h4>
 							<div class="popup arrow-right">
@@ -250,20 +248,24 @@ if($post_id) {
 				</div>
 
 			</div>
+
 		</div>
+
 
 		<div class="container">
 			<div class="twelve columns">
 				<h2 class="preview-title"><?php _e('Map preview', 'jeo'); ?></h2>
 			</div>
 		</div>
-		<div id="embed-container">
+		<div id="embed-container" class="bblanco">
 			<div class="content" id="widget-content">
 				<!-- iframe goes here -->
 			</div>
 		</div>
 
+
 	</div>
+
 </section>
 
 <script type="text/javascript">

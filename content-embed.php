@@ -24,7 +24,7 @@
 </head>
 <body <?php body_class(get_bloginfo('language')); ?>>
 
-	<?php $conf = jeo_get_map_embed_conf(); ?>
+	<?php $conf = jeo_get_map_embed_conf();?>
 
 	<header id="embed-header">
 		<h1><a href="<?php echo home_url('/'); ?>" target="_blank"><?php bloginfo('name'); ?><span>&nbsp;</span></a></h1>
