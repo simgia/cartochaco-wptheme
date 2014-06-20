@@ -45,7 +45,7 @@
 			</div>
 			<div class="eight columns">
 				<div class="social">
-					<a href="" class="tw" title="Twitter">Twitter</a> <a href="" class="fb" title="Facebook">Facebook</a>
+					<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">Twitter</a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">Facebook</a>
 				</div>
 				
 				<?php get_search_form(); ?>

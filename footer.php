@@ -11,7 +11,7 @@
 		</div>
 	</div>
 	<div class="social">
-		<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_fb2.gif" alt=""></a><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_tw2.gif" alt=""></a><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_mail.gif" alt=""></a>
+		<a href="https://www.facebook.com/cartochaco" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_fb2.gif" alt=""></a><a href="https://twitter.com/cartochaco" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_tw2.gif" alt=""></a><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_mail.gif" alt=""></a>
 	</div>
 	<div class="container">
 		<div class="six columns">
