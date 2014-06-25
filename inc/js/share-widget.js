@@ -84,7 +84,6 @@ if (!Array.prototype.indexOf) {
 		var hash = location.href.split('#/')[1];
 
 		// autoselect the contents of the textarea
-console.log("$output: ", $output);
 		autoSelect($output);
         autoSelect($urlOutput);
 
