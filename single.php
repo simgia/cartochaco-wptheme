@@ -19,7 +19,7 @@
 		</header>
 		<blockquote class="content">
 			<div class="container">
-			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+			    <?php the_excerpt(); ?>
 			</div>
 		</blockquote>
 		<section class="content">
