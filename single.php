@@ -55,38 +55,14 @@
 		</section>
 
 		<div class="share">
-			<span>Share: <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_fb3.gif" alt=""></a> <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_tw3.gif" alt=""></a> <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_Gplus.gif" alt=""></a></span>
+			<span>Share: 
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>" title="Compartir esta noticia en Facebook" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_fb3.gif" alt=""></a>
+                            <a href="https://twitter.com/home?status=<?php the_title() ?>&nbsp;<?php echo wp_get_shortlink(); ?> v&iacute;a @cartochaco" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_tw3.gif" alt=""></a> 
+                            <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false; "title="Share on Google +!"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_Gplus.gif" alt=""></a>
+                        </span>
 		</div>
 
 		<section class="posts-section">
-                <!--
-		<div class="container">
-			<h2>Related content</h2>
-			<ul class="posts-list">
-				<li id="post-<?php the_ID(); ?>" <?php post_class('four columns'); ?>>
-					<article id="post-<?php the_ID(); ?>">
-						<header class="post-header">
-							<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-						</header>
-						<section class="post-content">
-							<?php
-					        // La funcion Post Thumbnail.
-					         if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) { the_post_thumbnail(array(300,200), array("class" => "post_thumbnail")); } 
-					        //Post Thumbnail Fin
-					        ?>
-						</section>
-					</article>
-				</li>
-			</ul>
-
-			<div class="twelve columns">
-				<div class="navigation">
-					<?php posts_nav_link(); ?>
-				</div>
-			</div>
-		</div>
-                //-->
-                
                 <div class="container">    
                     <?php
 	                $orig_post = $post;
