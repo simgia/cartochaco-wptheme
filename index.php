@@ -15,15 +15,38 @@ if(is_front_page()) {
 <div class="section-title">
 	<div class="container">
 		<div class="twelve columns">
-			<h2>Mains Story Title</h2>
-			<div class="intro clearfix">
-				<div class="left">
-					Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-				</div>
-				<div class="right">
-					Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-				</div>
-			</div>
+                    <!-- 
+                        Aparece solo una noticia principal (featured post), que se puede agregar por cada post.
+                        Solo va a aparecer el ultimo featured post. La informacion qu se va a mostrar es un extract de la noticia.
+                    -->
+                    <?php query_posts(array('meta_key' => 'featured', 'posts_per_page' => 1, 'showposts' => 1)); if(have_posts()) : ?>
+                        <?php while(have_posts()) : the_post(); ?>
+		            <h2><?php the_title(); ?></h2>
+                            <div class="intro clearfix">
+                                <?php
+                                    $v_content = get_the_excerpt();
+                                    $v_palabras = explode(" ", $v_content);
+                                    $v_columna_izquierda = "";
+                                    $v_columna_derecha = "";
+                                    $v_cantidad_palabras = count($v_palabras);
+				    $v_columna_palabra = (int)($v_cantidad_palabras / 2); // El 2 es el # de columnas que se va a mostrar.
+                                    for($i = 0; $i < $v_cantidad_palabras; $i++){
+   					if($i < $v_columna_palabra){
+                                            $v_columna_izquierda = $v_columna_izquierda . $v_palabras[$i]." ";
+                                        }else{
+                                             $v_columna_derecha = $v_columna_derecha . $v_palabras[$i]." "; 
+                                        }
+                                    }
+                                ?>
+                                <div class="left">
+                                    <?php echo $v_columna_izquierda; ?> 
+                                </div>
+                                <div class="right">
+                                    <?php echo $v_columna_derecha; ?>
+                                </div>
+                        </div>
+			<?php endwhile; ?>
+                    <?php endif; wp_reset_query(); ?>
 		</div>
 	</div>
 </div>
