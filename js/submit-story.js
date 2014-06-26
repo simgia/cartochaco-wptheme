@@ -18,17 +18,17 @@
 		// Submit
 		$submit.find('form').submit(function() {
 			var submission = $submit.find('#' + choice).serialize();
-			$.getJSON(infoamazonia_submit.ajaxurl, submission, function(data) {
+			$.getJSON(cartochaco_submit.ajaxurl, submission, function(data) {
 				if(data.post_id) {
 					$submit.find('.submit-content').empty();
-					$submit.find('.description').html('<span>' + infoamazonia_submit.success_label + '<br/><br/>' + infoamazonia_submit.redirect_label + '</span>');
+					$submit.find('.description').html('<span>' + cartochaco_submit.success_label + '<br/><br/>' + cartochaco_submit.redirect_label + '</span>');
 					setTimeout(function() {
-						document.location.href = infoamazonia_submit.home;
+						document.location.href = cartochaco_submit.home;
 					}, 4000);
 				} else if(data.error)
 					$submit.find('.error').empty().append('<p>' + data.error + '</p>');
 				else
-					$submit.find('.error').empty().append('<p>' + infoamazonia_submit.error_label + '</p>');
+					$submit.find('.error').empty().append('<p>' + cartochaco_submit.error_label + '</p>');
 			});
 			return false;
 		});

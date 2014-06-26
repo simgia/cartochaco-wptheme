@@ -4,8 +4,8 @@
  * Submit story
  */
 
-add_action('wp_footer', 'infoamazonia_submit');
-function infoamazonia_submit() {
+add_action('wp_footer', 'cartochaco_submit');
+function cartochaco_submit() {
 	?>
 	<div id="submit-story">
 		<div class="submit-container">
@@ -22,7 +22,7 @@ function infoamazonia_submit() {
 						</div>
 					</div>
 					<form id="submit-story-full" class="submit-choice-content">
-						<input type="hidden" name="action" value="infoamazonia_submit" />
+						<input type="hidden" name="action" value="cartochaco_submit" />
 						<p>
 							<label for="story_author_full_name"><?php _e('Your full name', 'jeo'); ?> <span class="required">*</span></label>
 							<input type="text" name="story[meta][author_name]" id="story_author_full_name" size="30" />
@@ -65,7 +65,7 @@ function infoamazonia_submit() {
 									</p>
 								</div>
 								<script type="text/javascript">
-									jQuery(document).ready(function($) { $('#submit-story .geocode').infoamazoniaGeocodeBox(); });
+									jQuery(document).ready(function($) { $('#submit-story .geocode').cartochacoGeocodeBox(); });
 								</script>
 							</p>
 						</div>
@@ -80,7 +80,7 @@ function infoamazonia_submit() {
 						<input class="button" type="submit" value="<?php _e('Send story', 'jeo'); ?>" />
 					</form>
 					<form id="submit-story-url" class="submit-choice-content">
-						<input type="hidden" name="action" value="infoamazonia_submit" />
+						<input type="hidden" name="action" value="cartochaco_submit" />
 						<p>
 							<label for="story_full_name"><?php _e('Your full name', 'jeo'); ?> <span class="required">*</span></label>
 							<input type="text" name="story[meta][author_name]" id="story_full_name" size="30" />
@@ -107,7 +107,7 @@ function infoamazonia_submit() {
 									</p>
 								</div>
 								<script type="text/javascript">
-									jQuery(document).ready(function($) { $('#submit-story .geocode').infoamazoniaGeocodeBox(); });
+									jQuery(document).ready(function($) { $('#submit-story .geocode').cartochacoGeocodeBox(); });
 								</script>
 							</p>
 						</div>
@@ -120,9 +120,9 @@ function infoamazonia_submit() {
 	<?php
 }
 
-add_action('wp_ajax_nopriv_infoamazonia_submit', 'infoamazonia_submit_post');
-add_action('wp_ajax_infoamazonia_submit', 'infoamazonia_submit_post');
-function infoamazonia_submit_post() {
+add_action('wp_ajax_nopriv_cartochaco_submit', 'cartochaco_submit_post');
+add_action('wp_ajax_cartochaco_submit', 'cartochaco_submit_post');
+function cartochaco_submit_post() {
 	$story = $_GET['story'];
 	$return = array();
 

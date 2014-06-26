@@ -64,7 +64,7 @@ function jeo_theme_scripts() {
         // Submit JS.
         wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
 
-        wp_localize_script('submit-story', 'infoamazonia_submit', array(
+        wp_localize_script('submit-story', 'cartochaco_submit', array(
 		'ajaxurl' => admin_url('admin-ajax.php'),
 		'success_label' => __('Success! Thank you, your story will be reviewed by one of our editors and soon will be online.', 'jeo'),
 		'redirect_label' => __('You\'re being redirect to the home page in 4 seconds.', 'jeo'),
@@ -241,7 +241,7 @@ function infoamazonia_search_placeholder() {
 
 /*
 function infoamazonia_before_embed() {
-	remove_action('wp_footer', 'infoamazonia_submit');
+	remove_action('wp_footer', 'cartochaco_submit');
 	remove_action('wp_footer', 'infoamazonia_geocode_box');
 }
 add_action('jeo_before_embed', 'infoamazonia_before_embed');

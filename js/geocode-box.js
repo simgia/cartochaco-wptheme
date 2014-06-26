@@ -1,5 +1,5 @@
 jQuery(function($) {
-	$.fn.infoamazoniaGeocodeBox = function(settings) {
+	$.fn.cartochacoGeocodeBox = function(settings) {
 		var config = {
                     resultsContainer: $(this).find('.geocode-result'),
 		    addressInput: $(this).find('.geocoded-address'),
