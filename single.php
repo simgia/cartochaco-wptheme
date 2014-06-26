@@ -12,7 +12,6 @@
 		<header class="single-post-header" class="clearfix">
 			<div class="container">
 				<div class="twelve columns">
-                                     <?php //echo get_the_term_list($post->ID, 'publisher', '', ', ', ''); ?>
 				     <h1><?php the_title(); ?></h1>
 				</div>
 			</div>
@@ -26,7 +25,21 @@
 			<div class="container">
 				<div class="twelve columns">
 					<div class="autor">
-						<span><?php the_author(); ?> | <?php the_date(); ?></span>
+						<span>
+                                                    <?php
+                                                        $v_editores = get_the_term_list($post->ID, 'publisher', '', ', ', '');
+                                                        $v_editores_sin_formateo = strip_tags($v_editores);
+                                                        if($v_editores_sin_formateo){
+                                                            echo $v_editores_sin_formateo;
+                                                        }else{
+                                                             the_author(); 
+                                                        }
+                                                    ?> 
+                                                    | 
+                                                    <?php 
+                                                        the_date(); 
+                                                    ?>
+                                                </span>
 					</div>
 					<?php the_content(); ?>
 					<?php
