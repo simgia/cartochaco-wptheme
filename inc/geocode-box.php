@@ -4,13 +4,13 @@
  * Geocode box
  */
 
-function infoamazonia_geocode_box_scripts() {
+function cartochaco_geocode_box_scripts() {
 	wp_enqueue_script('geocode-box', get_stylesheet_directory_uri() . '/js/geocode-box.js', array('jquery', 'jeo.geocode.box'), '0.0.3');
 }
-add_action('wp_enqueue_scripts', 'infoamazonia_geocode_box_scripts');
+add_action('wp_enqueue_scripts', 'cartochaco_geocode_box_scripts');
 
-add_action('wp_footer', 'infoamazonia_geocode_box');
-function infoamazonia_geocode_box() {
+add_action('wp_footer', 'cartochaco_geocode_box');
+function cartochaco_geocode_box() {
 	?>
 	<div id="geocode-box">
 		<div class="geocode-box-container">

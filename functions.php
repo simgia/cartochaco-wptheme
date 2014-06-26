@@ -163,43 +163,6 @@ function jeo_comment( $comment, $args, $depth ) {
 	endswitch; // end comment_type check
 }
 
-/*
-// custom marker data
-function infoamazonia_marker_data($data) {
-	global $post;
-
-	$permalink = $data['url'];
-        
-	if(function_exists('qtrans_getLanguage'))
-		$permalink = qtrans_convertURL($data['url'], qtrans_getLanguage());
-       
-	$data['permalink'] = $permalink;
-	$data['url'] = get_post_meta($post->ID, 'url', true);
-	$data['content'] = infoamazonia_strip_content_media();
-	$data['slideshow'] = infoamazonia_get_content_media();
-	// source
-	$publishers = get_the_terms($post->ID, 'publisher');
-	if($publishers) {
-		$publisher = array_shift($publishers);
-		$data['source'] = apply_filters('single_cat_title', $publisher->name);
-	}
-	// thumbnail
-	$data['thumbnail'] = infoamazonia_get_thumbnail();
-	return $data;
-}
-add_filter('jeo_marker_data', 'infoamazonia_marker_data');
-*/
-
-function infoamazonia_get_thumbnail($post_id = false) {
-	global $post;
-	$post_id = $post_id ? $post_id : $post->ID;
-	$thumb_src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumb');
-	if($thumb_src)
-		return $thumb_src[0];
-	else
-		return get_post_meta($post->ID, 'picture', true);
-}
-
 // Ajax calendar.
 //include(STYLESHEETPATH . '/inc/ajax-calendar.php');
 
@@ -210,13 +173,13 @@ include(STYLESHEETPATH . '/inc/geocode-box.php');
 include(STYLESHEETPATH . '/inc/submit-story.php');
 
 // Remove page from search result.
-function infoamazonia_remove_page_from_search($query) {
+function cartochaco_remove_page_from_search($query) {
 	if($query->is_search) {
 		$query->set('post_type', 'post');
 	}
 	return $query;
 }
-add_filter('pre_get_posts', 'infoamazonia_remove_page_from_search');
+add_filter('pre_get_posts', 'cartochaco_remove_page_from_search');
 
 // Metaboxes.
 include(STYLESHEETPATH . '/inc/metaboxes/metaboxes.php');
@@ -227,33 +190,21 @@ include(STYLESHEETPATH . '/inc/taxonomies.php');
 // Taxonomy meta.
 include(STYLESHEETPATH . '/inc/taxonomies-meta.php');
 
-// Search placeholder.
-function infoamazonia_search_placeholder() {
-	global $wp_the_query;
-	$placeholder = __('Search for stories', 'jeo');
-	if($wp_the_query->is_singular(array('map', 'map-group')))
-		$placeholder = __('Search for stories on this map', 'jeo');
-	elseif($wp_the_query->is_tax('publisher'))
-		$placeholder = __('Search for stories on this publisher', 'jeo');
 
-	return $placeholder;
-}
-
-/*
-function infoamazonia_before_embed() {
+function cartochaco_before_embed() {
 	remove_action('wp_footer', 'cartochaco_submit');
-	remove_action('wp_footer', 'infoamazonia_geocode_box');
+	remove_action('wp_footer', 'cartochaco_geocode_box');
 }
-add_action('jeo_before_embed', 'infoamazonia_before_embed');
+add_action('jeo_before_embed', 'cartochaco_before_embed');
 
-function infoamazonia_embed_type($post_types) {
+function cartochaco_embed_type($post_types) {
 	if(get_query_var('embed')) {
 		$post_types = 'map';
 	}
 	return $post_types;
 }
-add_filter('jeo_featured_map_type', 'infoamazonia_embed_type');
-*/
+add_filter('jeo_featured_map_type', 'cartochaco_embed_type');
+
 
 /*
  * Advanced Custom Fields.

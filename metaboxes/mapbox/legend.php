@@ -10,7 +10,7 @@ function mapbox_legend_init() {
 function mapbox_legend_add_meta_box() {
 	add_meta_box(
 		'mapbox_legend',
-		__('Map legend', 'infoamazonia'),
+		__('Map legend', 'jeo'),
 		'mapbox_legend_inner_custom_box',
 		'map',
 		'side',
@@ -22,7 +22,7 @@ function mapbox_legend_inner_custom_box($post) {
 	$legend = get_post_meta($post->ID, 'legend', true);
 	?>
 	<div id="mapbox-legend-metabox">
-		<h4><?php _e('Enter your HTML code to use as legend on the map', 'infoamazonia'); ?></h4>
+		<h4><?php _e('Enter your HTML code to use as legend on the map', 'jeo'); ?></h4>
 		<textarea style="width:100%;height:100px;" name="mapbox_legend" id="mapbox_legend_textarea"><?php if($legend) echo $legend; ?></textarea>
 	</div>
 	<?php
