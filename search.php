@@ -10,26 +10,22 @@
 	</div>
 </div>
 
-<?php echo "entro"; ?>
-
 <?php if(have_posts()) : ?>
     <?php
         get_template_part('loop');
     ?>
 <?php else : ?>
     <?php query_posts(); if(have_posts()) : ?>
-        <section id="last-stories" class="loop-section">
-	    <div class="section-title">
-	        <div class="container">
-		    <div class="twelve columns">
-	                <h3><?php _e('Nothing found. Viewing all posts', 'jeo'); ?></h3>
-		    </div>
+        <div class="section-title">
+	    <div class="container">
+                <div class="twelve columns">
+	            <h3><?php _e('Nothing found. Viewing all posts', 'jeo'); ?></h3>
 		</div>
-	    </div>
-	    <?php
-		get_template_part('loop');				
-	    ?>
-	</section>
+            </div>
+	</div>
+	<?php
+	    get_template_part('loop');				
+	?>
     <?php endif; wp_reset_query(); ?>
 <?php endif; ?>
 
