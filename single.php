@@ -5,7 +5,7 @@
 	<?php jeo_map(); ?>
 
 	<?php // Comente esta parte para que no salga el mapa que se repite (by josego)
-              // jeo_featured(); 
+              //jeo_featured(); 
         ?>
 
 	<article id="content" class="single-post bblanco">
