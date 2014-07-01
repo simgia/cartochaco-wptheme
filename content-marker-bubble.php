@@ -20,4 +20,4 @@ if($publishers) {
         }
     ?>
 </small>
-<h6><?php the_title(); ?></h6>
+<h4><?php the_title(); ?></h4>

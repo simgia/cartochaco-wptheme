@@ -188,8 +188,9 @@ body.es-ES .lang-es {
 	display: none !important;
 }
 .leaflet-popup-content small {
-		color: #96979C;
+	color: #96979C;
 }
 .leaflet-popup-content h4 {
+        font-size: 16px;
 	margin: 0;
 }
