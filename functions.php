@@ -232,6 +232,11 @@ require_once(STYLESHEETPATH . '/inc/acf/acf.php');
  */
 include(STYLESHEETPATH . '/inc/datasets.php');
 
+/*
+ * Reports.
+ */
+include(STYLESHEETPATH . '/inc/reports.php');
+
 function cartochaco_setup() {
 	add_theme_support('post-thumbnails');
 	add_image_size('post-thumb', 360, 121, true);
