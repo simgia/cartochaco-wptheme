@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MapPress 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27 17:20-0300\n"
-"PO-Revision-Date: 2014-07-09 13:56-0400\n"
+"PO-Revision-Date: 2014-07-14 18:05-0400\n"
 "Last-Translator: Simgia <josego@simgia.com>\n"
 "Language-Team: Cardume <contato@cardume.art.br>\n"
 "Language: en_US\n"
@@ -57,7 +57,7 @@ msgstr "Archivos"
 #: ../archive-dataset.php:11 ../taxonomy-license.php:11 ../inc/datasets.php:19
 #: ../inc/datasets.php:29
 msgid "Datasets"
-msgstr ""
+msgstr "Datos"
 
 #: ../content-embed.php:16
 msgid "Page"
@@ -636,49 +636,113 @@ msgstr "Elija entre las fuentes más usadas"
 msgid "No sources found"
 msgstr "No se han encontrado fuentes"
 
-#: ../inc/reports.php:14 ../inc/reports.php:24 ..archive-report.php:10
+#: ../inc/reports.php:16 ../inc/reports.php:26 ..archive-report.php:10
 msgid "Reports"
 msgstr "Informes"
 
-#: ../inc/reports.php:15
+#: ../inc/reports.php:17
 msgid "Report"
 msgstr "Informe"
 
-#: ../inc/reports.php:16
+#: ../inc/reports.php:18
 msgid "Add report"
 msgstr "Agregar informe"
 
-#: ../inc/reports.php:17
+#: ../inc/reports.php:19
 msgid "Add new report"
 msgstr "Añadir nuevo informe"
 
-#: ../inc/reports.php:18
+#: ../inc/reports.php:20
 msgid "Edit report"
 msgstr "Editar informe"
 
-#: ../inc/reports.php:19
+#: ../inc/reports.php:21
 msgid "New report"
 msgstr "Nuevo informe"
 
-#: ../inc/reports.php:20
+#: ../inc/reports.php:22
 msgid "View report"
 msgstr "Ver informe"
 
-#: ../inc/reports.php:21
+#: ../inc/reports.php:23
 msgid "Search report"
 msgstr "Búsqueda informe"
 
-#: ../inc/reports.php:22
+#: ../inc/reports.php:24
 msgid "No report found"
 msgstr "No se han encontrado informe"
 
-#: ../inc/reports.php:23
+#: ../inc/reports.php:25
 msgid "No report found in the trash"
 msgstr "No se han encontrado informe en la papelera"
 
-#: ../inc/reports.php:30
+#: ../inc/reports.php:31
 msgid "CartoChaco Reports"
 msgstr ""
+
+#: ../inc/reports.php:46
+msgid "Graphics or Tables"
+msgstr "Gráficos o Tablas"
+
+#: ../inc/reports.php:71
+msgid "URL for graphics."
+msgstr "URL para los gráficos."
+
+#: ../inc/reports.php:75
+msgid "Graphic 1 url"
+msgstr "Gráfico 1 url"
+
+#: ../inc/reports.php:79
+msgid "Graphic 2 url"
+msgstr "Gráfico 2 url"
+
+#: ../inc/reports.php:83
+msgid "Graphic 3 url"
+msgstr "Gráfico 3 url"
+
+#: ../inc/reports.php:87
+msgid "Graphic 4 url"
+msgstr "Gráfico 4 url"
+
+#: ../inc/reports.php:91
+msgid "Graphic 5 url"
+msgstr "Gráfico 5 url"
+
+#: ../inc/reports.php:95
+msgid "Graphic 6 url"
+msgstr "Gráfico 6 url"
+
+#: ../inc/reports.php:99
+msgid "Graphic 7 url"
+msgstr "Gráfico 7 url"
+
+#: ../inc/reports.php:103
+msgid "Graphic 8 url"
+msgstr "Gráfico 8 url"
+
+#: ../inc/reports.php:107
+msgid "Graphic 9 url"
+msgstr "Gráfico 9 url"
+
+#: ../inc/reports.php:111
+msgid "Graphic 10 url"
+msgstr "Gráfico 10 url"
+
+#: ../inc/reports.php:115
+msgid "Graphic 11 url"
+msgstr "Gráfico 11 url"
+
+#: ../inc/reports.php:119
+msgid "Graphic 12 url"
+msgstr "Gráfico 12 url"
+
+#: ../inc/reports.php:123
+msgid "Graphic 13 url"
+msgstr "Gráfico 13 url"
+
+#: ../inc/reports.php:127
+msgid "Graphic 14 url"
+msgstr "Gráfico 14 url"
 
 #: ../inc/featured.php:96
 msgid "Featured content"
