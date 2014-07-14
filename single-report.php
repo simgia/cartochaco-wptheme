@@ -6,7 +6,6 @@
 	    <div class="container">
 	        <div class="twelve columns">
 		    <header class="post-header">
-		        <!-- <h2><a href="<?php //echo get_post_type_archive_link('report'); ?>"><?//php _e('Reports', 'jeo'); ?></a></h2> -->
 			<h1 class="title"><?php the_title(); ?></h1>
 		    </header>
 		</div>
@@ -17,19 +16,92 @@
 	        <div class="post-content">
 		    <div class="eight columns">
 		        <div class="post-description">
-			    <?php the_content(); ?>                            
-                            <iframe height="500" width="620" src="//docs.google.com/spreadsheets/d/1W_Cfx9OJrq2uwbSe1hjY6QvE6NNVaLx9XOHgfLJqiS4/gviz/chartiframe?oid=530252522" seamless frameborder=0 scrolling=no></iframe>
-			    <?php
-			        $preview = get_field('preview_url');
-				if($preview) :
-				?>
-				    <div class="preview-container">
-				        <h3><?php _e('Preview data', 'jeo'); ?></h3>
-					<iframe class="data-preview" src="<?php echo $preview; ?>" width="620" height="500"></iframe>
-				    </div>
-		  	    <?php
-				endif;
-			    ?>
+			    <?php the_content(); 
+                                $v_grafico_1_url = get_post_meta($post->ID, 'grafico_1_url', true);
+                                $v_grafico_2_url = get_post_meta($post->ID, 'grafico_2_url', true);
+                                $v_grafico_3_url = get_post_meta($post->ID, 'grafico_3_url', true);  
+                                $v_grafico_4_url = get_post_meta($post->ID, 'grafico_4_url', true);
+                                $v_grafico_5_url = get_post_meta($post->ID, 'grafico_5_url', true);
+                                $v_grafico_6_url = get_post_meta($post->ID, 'grafico_6_url', true); 
+ 				$v_grafico_7_url = get_post_meta($post->ID, 'grafico_7_url', true);
+                                $v_grafico_8_url = get_post_meta($post->ID, 'grafico_8_url', true);  
+                                $v_grafico_9_url = get_post_meta($post->ID, 'grafico_9_url', true);
+                                $v_grafico_10_url = get_post_meta($post->ID, 'grafico_10_url', true);
+                                $v_grafico_11_url = get_post_meta($post->ID, 'grafico_11_url', true); 
+ 				$v_grafico_12_url = get_post_meta($post->ID, 'grafico_12_url', true);
+                                $v_grafico_13_url = get_post_meta($post->ID, 'grafico_13_url', true);
+                                $v_grafico_14_url = get_post_meta($post->ID, 'grafico_14_url', true);
+				if(isset($v_grafico_1_url) && $v_grafico_1_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_1_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_2_url) && $v_grafico_2_url != ""){
+				    ?>
+	                           <iframe height="350" width="500" src="<?php echo $v_grafico_2_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_3_url) && $v_grafico_3_url != ""){
+				    ?>
+	                           <iframe height="350" width="500" src="<?php echo $v_grafico_3_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_4_url) && $v_grafico_4_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_4_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_5_url) && $v_grafico_5_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_5_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_6_url) && $v_grafico_6_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_6_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_7_url) && $v_grafico_7_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_7_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_8_url) && $v_grafico_8_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_8_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_9_url) && $v_grafico_9_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_9_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_10_url) && $v_grafico_10_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_10_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_11_url) && $v_grafico_11_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_11_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_12_url) && $v_grafico_12_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_12_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_13_url) && $v_grafico_13_url != ""){
+				    ?>
+	                            <iframe height="350" width="500" src="<?php echo $v_grafico_13_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+				if(isset($v_grafico_14_url) && $v_grafico_14_url != ""){
+				    ?>
+	                            <iframe height="500" width="620" src="<?php echo $v_grafico_14_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				<?php
+				}
+                            ?>                            
 			</div>
 		    </div>
 		</div>
