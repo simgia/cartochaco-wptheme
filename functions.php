@@ -3,6 +3,7 @@
 require_once(get_template_directory() . '/inc/admin/settings.php');
 require_once(get_template_directory() . '/inc/core.php');
 require_once(get_template_directory() . '/inc/share-widget.php');
+require_once(get_template_directory() . '/inc/advanced-navigation.php');
 
 if(!isset($content_width))
 	$content_width = 760;
@@ -53,6 +54,9 @@ function jeo_theme_scripts() {
 	wp_register_style('jeo-skeleton', get_template_directory_uri() . '/css/skeleton.css', array('jeo-base'), '1.2');
 	wp_register_style('font-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
 	wp_register_style('jeo-main', get_template_directory_uri() . '/css/main.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3');
+
+        /* Chosen */
+	wp_register_script('chosen', get_stylesheet_directory_uri() . '/lib/chosen.jquery.min.js', array('jquery'), '1.0.0');
 
 	wp_register_script('jquery-isotope', get_template_directory_uri() . '/lib/jquery.isotope.min.js', array('jquery'), '1.5.25');
 

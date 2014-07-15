@@ -1,4 +1,12 @@
-<?php if(is_front_page() || is_tax('publisher')) : ?>
+<?php
+    if(get_query_var('cartochaco_advanced_nav')) :
+
+		?>
+		<h1 class="title"><?php _e('Advanced filters', 'jeo'); ?></h1>
+		<?php
+		cartochaco_adv_nav_filters();
+ 
+    elseif(is_front_page() || is_tax('publisher')) : ?>
 	<div class="clearfix">
 		<div class="choose-filter">
 			<?php

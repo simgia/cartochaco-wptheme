@@ -51,6 +51,18 @@ if(is_front_page()) {
 	</div>
 </div>
 
-<?php get_template_part('loop'); ?>
+<div class="container">
+    <div class="twelve columns">
+        <?php get_template_part('section', 'subheader'); ?>
+    </div>
+</div>
+
+<?php
+    if(get_query_var('cartochaco_advanced_nav')){
+        get_template_part('loop',' explore');
+    }else{
+         get_template_part('loop');
+    }
+?>
 
 <?php get_footer(); ?>
