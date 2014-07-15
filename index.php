@@ -59,7 +59,7 @@ if(is_front_page()) {
 
 <?php
     if(get_query_var('cartochaco_advanced_nav')){
-        get_template_part('loop',' explore');
+        get_template_part('loop','explore');
     }else{
          get_template_part('loop');
     }
