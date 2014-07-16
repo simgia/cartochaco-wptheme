@@ -6,7 +6,8 @@
 		<?php
 		cartochaco_adv_nav_filters();
  
-    elseif(is_front_page() || is_tax('publisher')) : ?>
+    /* elseif(is_front_page() || is_tax('publisher')) : ?>*/
+    elseif(false) : ?>
 	<div class="clearfix">
 		<div class="choose-filter">
 			<?php
