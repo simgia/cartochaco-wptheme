@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MapPress 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27 17:20-0300\n"
-"PO-Revision-Date: 2014-07-19 10:57-0400\n"
+"PO-Revision-Date: 2014-07-19 19:08-0400\n"
 "Last-Translator: Simgia <josego@simgia.com>\n"
 "Language-Team: Cardume <contato@cardume.art.br>\n"
 "Language: en_US\n"
@@ -290,6 +290,22 @@ msgstr "descargar dato"
 #: ../loop-dataset.php:12
 msgid "read me"
 msgstr "léeme"
+
+#: ../loop-explore.php:33
+msgid "Use our stories"
+msgstr "Utilice nuestras noticias"
+
+#: ../loop-explore.php:43
+msgid "RSS Feed"
+msgstr ""
+
+#: ../loop-explore.php:44
+msgid "Download"
+msgstr ""
+
+#: ../loop-explore.php:45
+msgid "Get GeoJSON"
+msgstr ""
 
 #: ../loop-report.php:9
 msgid "Visualize"
