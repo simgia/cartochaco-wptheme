@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MapPress 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27 17:20-0300\n"
-"PO-Revision-Date: 2014-07-14 18:05-0400\n"
+"PO-Revision-Date: 2014-07-19 10:57-0400\n"
 "Last-Translator: Simgia <josego@simgia.com>\n"
 "Language-Team: Cardume <contato@cardume.art.br>\n"
 "Language: en_US\n"
@@ -25,39 +25,39 @@ msgstr "Página no encontrada"
 msgid "Trying searching:"
 msgstr "Intentar nueva búsqueda"
 
-#: ../archive.php:10 ../section-subheader.php:61
+#: ../archive.php:10 ../section-subheader.php:70
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Archivo para el día: %s"
 
-#: ../archive.php:12 ../section-subheader.php:63
+#: ../archive.php:12 ../section-subheader.php:72
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Archivos por mes: %s"
 
-#: ../archive.php:12 ../section-subheader.php:63
+#: ../archive.php:12 ../section-subheader.php:72
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F, Y"
 
-#: ../archive.php:14 ../section-subheader.php:65
+#: ../archive.php:14 ../section-subheader.php:74
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Archivos del año: %s"
 
-#: ../archive.php:14 ../section-subheader.php:65
+#: ../archive.php:14 ../section-subheader.php:74
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: ../archive.php:16 ../section-subheader.php:67
+#: ../archive.php:16 ../section-subheader.php:76
 msgid "Archives"
 msgstr "Archivos"
 
 #: ../archive-dataset.php:11 ../taxonomy-license.php:11 ../inc/datasets.php:19
 #: ../inc/datasets.php:29
 msgid "Datasets"
-msgstr "Datos"
+msgstr ""
 
 #: ../content-embed.php:16
 msgid "Page"
@@ -295,7 +295,7 @@ msgstr "léeme"
 msgid "Visualize"
 msgstr "Visualizar"
 
-#: ../search.php:8 ../section-subheader.php:48
+#: ../search.php:8 ../section-subheader.php:57
 msgid "Search results for: "
 msgstr "Resultados de la búsqueda para: "
 
@@ -315,17 +315,21 @@ msgstr "Posts relacionados"
 msgid "Stories on"
 msgstr "Historias de"
 
-#: ../section-subheader.php:6
+#: ../section-subheader.php:5
+msgid "Advanced filters"
+msgstr "Filtros avanzados"
+
+#: ../section-subheader.php:15
 msgid "Choose a publisher"
 msgstr "Elige un editor"
 
-#: ../section-subheader.php:22
+#: ../section-subheader.php:31
 msgid "All stories"
 msgstr "Todas las noticias"
 
-#: ../section-subheader.php:46
+#: ../section-subheader.php:55
 msgid "Nothing found for: "
-msgstr "No hay noticias por la búsqueda:"
+msgstr "No hay noticias por la búsqueda: "
 
 #: ../section-publisher-description.php:10
 msgid "Visit"
@@ -342,6 +346,34 @@ msgstr "Fuentes"
 #: ../taxonomy-license.php:46
 msgid "Licenses"
 msgstr "Licencias"
+
+#: ../inc/advanced-navigation.php:94
+msgid "Text search"
+msgstr "Búsqueda de texto"
+
+#: ../inc/advanced-navigation.php:95
+msgid "Type your search here"
+msgstr "Escriba su búsqueda aquí"
+
+#: ../inc/advanced-navigation.php:105
+msgid "Categories"
+msgstr "Categorías"
+
+#: ../inc/advanced-navigation.php:123
+msgid "Date range"
+msgstr "Intervalo de fechas"
+
+#: ../inc/advanced-navigation.php:126
+msgid "From"
+msgstr "Desde"
+
+#: ../inc/advanced-navigation.php:130
+msgid "To"
+msgstr "Hasta"
+
+#: ../inc/advanced-navigation.php:137
+msgid "Filter"
+msgstr "Filtrar"
 
 #: ../inc/api.php:35
 msgid "GeoJSON API"
