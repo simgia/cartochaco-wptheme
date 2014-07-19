@@ -28,5 +28,21 @@
 				</div>
 			</div>
 		</div>
+		<div class="query-actions">
+		    <h3>
+		        <?php _e('Latest stories', 'jeo'); ?>
+                    </h3>
+		    <?php
+		        global $wp_query;
+			$args = $wp_query->query;
+			$args = array_merge($args, $_GET);
+			$geojson = jeo_get_api_url($args);
+			$download = jeo_get_api_download_url($args);
+			$rss = add_query_arg(array('feed' => 'rss'));
+		    ?>
+		    <a class="rss" href="<?php echo $rss; ?>" target="_blank"><?php _e('RSS Feed', 'jeo'); ?></a>
+		    <a class="geojson" href="<?php echo $geojson; ?>" target="_blank"><?php _e('Get GeoJSON', 'jeo'); ?></a>
+		    <a class="download" href="<?php echo $download; ?>" target="_blank"><?php _e('Download', 'jeo'); ?></a>
+		</div>
 	</section>
 <?php endif; ?>
