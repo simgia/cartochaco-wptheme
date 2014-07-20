@@ -2,11 +2,11 @@
 
 /*
  * cartochaco
- * Advanced navigation.
+ * Advanced navigation para los Informes (Reports).
  */
-class cartochaco_AdvancedNav {
+class cartochaco_AdvancedNav_Reports {
 	var $prefix = 'cartochaco_filter_';
-	var $slug = 'explore';
+	var $slug = 'reports';
 
 	function __construct() {
 		add_filter('query_vars', array($this, 'query_vars'));
@@ -17,30 +17,30 @@ class cartochaco_AdvancedNav {
 	}
 
 	function query_vars($vars) {
-		$vars[] = 'cartochaco_advanced_nav';
+		$vars[] = 'cartochaco_advanced_nav_reports';
 		return $vars;
 	}
 
 	function body_class($class) {
-		if(get_query_var('cartochaco_advanced_nav'))
+		if(get_query_var('cartochaco_advanced_nav_reports'))
 			$class[] = 'advanced-nav';
 		return $class;
 	}
 
 	function generate_rewrite_rules($wp_rewrite) {
 		$widgets_rule = array(
-			$this->slug . '$' => 'index.php?cartochaco_advanced_nav=1'
+			$this->slug . '$' => 'index.php?cartochaco_advanced_nav_reports=1'
 		);
 		$wp_rewrite->rules = $widgets_rule + $wp_rewrite->rules;
 	}
 
 	function pre_get_posts($query) {
 
-		if($query->is_main_query() && $query->get('cartochaco_advanced_nav')) {
+		if($query->is_main_query() && $query->get('cartochaco_advanced_nav_reports')) {
 
 			$query->is_home = false;
 
-			$query->set('posts_per_page', 10);
+			$query->set('posts_per_page', 30);
 			$query->set('ignore_sticky_posts', true);
 
 			if(isset($_GET[$this->prefix . 's'])) {
@@ -81,7 +81,6 @@ class cartochaco_AdvancedNav {
 	}
 
 	function form() {
-
 		wp_enqueue_script('chosen');
 		wp_enqueue_script('moment-js');
 		wp_enqueue_style('chosen', get_stylesheet_directory_uri() . '/css/chosen.css');
@@ -89,28 +88,6 @@ class cartochaco_AdvancedNav {
 		wp_enqueue_style('jquery-ui-smoothness', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
 		?>
 		<form class="advanced-nav-filters row">
-			<div class="three columns alpha">
-				<div class="search-input adv-nav-input">
-					<p class="label"><label for="<?php echo $this->prefix; ?>s"><?php _e('Text search', 'jeo'); ?></label></p>
-					<input type="text" id="<?php echo $this->prefix; ?>s" name="<?php echo $this->prefix; ?>s" placeholder="<?php _e('Type your search here', 'jeo'); ?>" value="<?php echo (isset($_GET[$this->prefix . 's'])) ? $_GET[$this->prefix . 's'] : ''; ?>" />
-				</div>
-			</div>
-			<?php
-			$categories = get_categories();
-			$active_cats = isset($_GET[$this->prefix . 'category']) ? $_GET[$this->prefix . 'category'] : array();
-			if($categories) :
-				?>
-				<div class="three columns">
-					<div class="category-input adv-nav-input">
-						<p class="label"><label for="<?php echo $this->prefix; ?>category"><?php _e('Categories', 'jeo'); ?></label></p>
-						<select id="<?php echo $this->prefix; ?>category" name="<?php echo $this->prefix; ?>category[]" multiple>
-							<?php foreach($categories as $category) : ?>
-								<option value="<?php echo $category->term_id; ?>" <?php if(in_array($category->term_id, $active_cats)) echo 'selected'; ?>><?php echo $category->name; ?></option>
-							<?php endforeach; ?>
-						</select>
-					</div>
-				</div>
-			<?php endif; ?>
 			<?php
 			$oldest = array_shift(get_posts(array('posts_per_page' => 1, 'order' => 'ASC', 'orderby' => 'date')));
 			$newest = array_shift(get_posts(array('posts_per_page' => 1, 'order' => 'DESC', 'orderby' => 'date')));
@@ -141,8 +118,6 @@ class cartochaco_AdvancedNav {
 			(function($) {
 
 				$(document).ready(function() {
-					$('.category-input select').chosen();
-
 					var min = moment('<?= $before; ?>').toDate();
 					var max = moment('<?= $after; ?>').toDate();
 
@@ -174,10 +149,10 @@ class cartochaco_AdvancedNav {
 
 }
 
-$GLOBALS['cartochaco_adv_nav'] = new cartochaco_AdvancedNav();
+$GLOBALS['cartochaco_adv_nav_reports'] = new cartochaco_AdvancedNav_Reports();
 
-function cartochaco_adv_nav_filters() {
-	return $GLOBALS['cartochaco_adv_nav']->form();
+function cartochaco_adv_nav_reports_filters() {
+	return $GLOBALS['cartochaco_adv_nav_reports']->form();
 }
 
 ?>
