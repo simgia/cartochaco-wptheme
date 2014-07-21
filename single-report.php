@@ -33,72 +33,109 @@
                                 $v_grafico_14_url = get_post_meta($post->ID, 'grafico_14_url', true);
 				if(isset($v_grafico_1_url) && $v_grafico_1_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_1_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_1_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_2_url) && $v_grafico_2_url != ""){
 				    ?>
-	                           <iframe height="350" width="500" src="<?php echo $v_grafico_2_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                           <iframe height="350" width="600" src="<?php echo $v_grafico_2_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+                                   </br>
+				   </br>
+				   </br>
 				<?php
 				}
 				if(isset($v_grafico_3_url) && $v_grafico_3_url != ""){
 				    ?>
-	                           <iframe height="350" width="500" src="<?php echo $v_grafico_3_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                           <iframe height="350" width="600" src="<?php echo $v_grafico_3_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+                                   </br>
+				   </br>
+				   </br>  
 				<?php
 				}
 				if(isset($v_grafico_4_url) && $v_grafico_4_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_4_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_4_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>							
 				<?php
 				}
 				if(isset($v_grafico_5_url) && $v_grafico_5_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_5_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_5_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_6_url) && $v_grafico_6_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_6_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_6_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_7_url) && $v_grafico_7_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_7_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_7_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_8_url) && $v_grafico_8_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_8_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_8_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_9_url) && $v_grafico_9_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_9_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_9_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>	
 				<?php
 				}
 				if(isset($v_grafico_10_url) && $v_grafico_10_url != ""){
 				    ?>
 	                            <iframe height="350" width="500" src="<?php echo $v_grafico_10_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_11_url) && $v_grafico_11_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_11_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_11_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>
 				<?php
 				}
 				if(isset($v_grafico_12_url) && $v_grafico_12_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_12_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_12_url; ?>" seamless frameborder=0 scrolling=no></iframe>
 				<?php
 				}
 				if(isset($v_grafico_13_url) && $v_grafico_13_url != ""){
 				    ?>
-	                            <iframe height="350" width="500" src="<?php echo $v_grafico_13_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_13_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
+				    </br>
+				    </br>	
 				<?php
 				}
 				if(isset($v_grafico_14_url) && $v_grafico_14_url != ""){
 				    ?>
-	                            <iframe height="500" width="620" src="<?php echo $v_grafico_14_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+	                            <iframe height="350" width="600" src="<?php echo $v_grafico_14_url; ?>" seamless frameborder=0 scrolling=no></iframe>
+				    </br>
 				<?php
 				}
                             ?>                            
