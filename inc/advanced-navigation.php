@@ -40,7 +40,7 @@ class cartochaco_AdvancedNav {
 
 			$query->is_home = false;
 
-			$query->set('posts_per_page', 10);
+			$query->set('posts_per_page', 9);
 			$query->set('ignore_sticky_posts', true);
 
 			if(isset($_GET[$this->prefix . 's'])) {

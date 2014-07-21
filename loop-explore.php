@@ -1,7 +1,8 @@
 <?php
     wp_enqueue_script('lockfixed', get_stylesheet_directory_uri() . '/js/jquery.lockfixed.min.js', array('jquery'), '0.1');
 ?>
-<?php if(have_posts()) : ?>
+<?php 
+    if(have_posts()) : ?>
 	<section class="posts-section">
 		<div class="container">
 			<ul class="posts-list">
@@ -24,7 +25,7 @@
 			</ul>
 			<div class="twelve columns">
 				<div class="navigation">
-					<?php posts_nav_link(); ?>
+					<?php //posts_nav_link(); ?>
 				</div>
 			</div>
 		</div>
