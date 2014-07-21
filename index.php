@@ -21,7 +21,7 @@ if(is_front_page()) {
                     -->
                     <?php query_posts(array('meta_key' => 'featured', 'posts_per_page' => 1, 'showposts' => 1)); if(have_posts()) : ?>
                         <?php while(have_posts()) : the_post(); ?>
-		            <h2><?php the_title(); ?></h2>
+                            <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                             <div class="intro clearfix">
                                 <?php
                                     $v_content = get_the_excerpt();
