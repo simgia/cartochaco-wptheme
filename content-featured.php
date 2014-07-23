@@ -16,6 +16,11 @@
 								<?php $active = $i >= 1 ? '' : ' active'; ?>
 								<li id="post-<?php the_ID(); ?>" <?php post_class($class . ' ' . $active); ?> <?php echo $geometry; ?> <?php echo jeo_element_max_zoom(); ?>>
 									<article id="post-<?php the_ID(); ?>">
+										<section class="post-content">
+											<div class="post-excerpt">
+												<?php the_excerpt(); ?>
+											</div>
+										</section>
 										<header class="post-header">
 											<h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 											<p class="meta">
@@ -23,11 +28,6 @@
 												<span class="author"><?php _e('by', 'jeo'); ?> <?php the_author(); ?></span>
 											</p>
 										</header>
-										<section class="post-content">
-											<div class="post-excerpt">
-												<?php the_excerpt(); ?>
-											</div>
-										</section>
 										<aside class="actions">
 											<a href="<?php the_permalink(); ?>"><?php _e('Read more', 'jeo'); ?></a>
 										</aside>

@@ -104,9 +104,7 @@
 	             ?>
 	                            <li id="post-<?php the_ID(); ?>" <?php post_class('four columns'); ?>>
 		                        <article id="post-<?php the_ID(); ?>">
-			                    <header class="post-header">
-			                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-			                    </header>
+			                    
 			                    <section class="post-content">
 			                    <?php
 			                        // La funcion Post Thumbnail.
@@ -115,6 +113,9 @@
                                                 // Post Thumbnail Fin
 			                    ?>
 			                    </section>
+			                    <header class="post-header">
+			                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+			                    </header>
 			                </article>
 		                   </li>
 	                     <? } 

@@ -7,7 +7,8 @@
 			</nav>
 		</div>
 		<div class="six columns partners">
-			<p>Partners <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners.png" alt=""></p>
+			<p><span>Partners</span> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners1.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners2.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners3.png" alt=""></p>
+			<p><span>Project by</span> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt=""></p>
 		</div>
 	</div>
 	<div class="social">

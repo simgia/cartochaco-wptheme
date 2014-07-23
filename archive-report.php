@@ -1,12 +1,13 @@
 <?php get_header(); ?>
 
-<section id="content">
-	<div id="map-archive" class="gray-page archive-page">
-                <h1 class="title"><?php _e('Advanced filters', 'jeo'); ?></h1>
+<section id="content">  
+	<div id="map-archive" class="gray-page archive-page container">
+		<div style="padding: 20px 0;">
+        <h1 class="title"><?php _e('Advanced filters', 'jeo'); ?></h1>
 		<?php
 		    cartochaco_adv_nav_reports_filters();
                 ?>
-
+		</div>
 		<?php 
 
 

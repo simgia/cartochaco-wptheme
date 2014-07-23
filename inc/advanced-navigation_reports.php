@@ -95,23 +95,21 @@ class cartochaco_AdvancedNav_Reports {
 			$before = $oldest->post_date;
 			$after = $newest->post_date;
 			?>
-			<div class="five columns omega">
-				<div class="date-input adv-nav-input">
-					<p class="label"><label for="<?php echo $this->prefix; ?>date_start"><?php _e('Date range', 'jeo'); ?></label></p>
-					<div class="date-range-inputs">
-						<div class="date-from-container">
-							<label class="sublabel" for="<?php echo $this->prefix; ?>date_start"><?php _e('From', 'jeo'); ?></label>
-							<input type="text" class="date-from" id="<?php echo $this->prefix; ?>date_start" name="<?php echo $this->prefix; ?>date_start" value="<?php echo (isset($_GET[$this->prefix . 'date_start'])) ? $_GET[$this->prefix . 'date_start'] : ''; ?>" />
-						</div>
-						<div class="date-to-container">
-							<label class="sublabel" for="<?php echo $this->prefix; ?>date_end"><?php _e('To', 'jeo'); ?></label>
-							<input type="text" class="date-to" id="<?php echo $this->prefix; ?>date_end" name="<?php echo $this->prefix; ?>date_end" value="<?php echo (isset($_GET[$this->prefix . 'date_end'])) ? $_GET[$this->prefix . 'date_end'] : ''; ?>" />
-						</div>
-					</div>
+			<div class="container">
+				
+				<div class="three columns">
+					<label for="<?php echo $this->prefix; ?>date_start"><?php _e('Date range', 'jeo'); ?></label>
+					<label class="sublabel" for="<?php echo $this->prefix; ?>date_start" style="display: none;"></label>
+					<input type="text" class="date-from" id="<?php echo $this->prefix; ?>date_start" placeholder="<?php _e('From', 'jeo'); ?>" name="<?php echo $this->prefix; ?>date_start" value="<?php echo (isset($_GET[$this->prefix . 'date_start'])) ? $_GET[$this->prefix . 'date_start'] : ''; ?>" />
 				</div>
-			</div>
-			<div class="one column">
-				<input type="submit" class="button" value="<?php _e('Filter', 'jeo'); ?>" />
+				<div class="three columns">
+					<label class="sublabel" for="<?php echo $this->prefix; ?>date_end">&nbsp;</label>
+					<input type="text" class="date-to" id="<?php echo $this->prefix; ?>date_end" placeholder="<?php _e('To', 'jeo'); ?>" name="<?php echo $this->prefix; ?>date_end" value="<?php echo (isset($_GET[$this->prefix . 'date_end'])) ? $_GET[$this->prefix . 'date_end'] : ''; ?>" />
+				</div>
+				<div class="three columns">
+					<label for="">&nbsp;</label>
+					<input type="submit" class="button" value="<?php _e('Filter', 'jeo'); ?>" />
+				</div>
 			</div>
 		</form>
 		<script type="text/javascript">

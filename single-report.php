@@ -14,7 +14,7 @@
 	<section id="content">
 	    <div class="container row">
 	        <div class="post-content">
-		    <div class="eight columns">
+		    <div class="twelve columns">
 		        <div class="post-description">
 			    <?php the_content(); 
                                 $v_grafico_1_url = get_post_meta($post->ID, 'grafico_1_url', true);
