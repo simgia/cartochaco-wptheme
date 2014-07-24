@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MapPress 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-27 17:20-0300\n"
-"PO-Revision-Date: 2014-07-19 19:08-0400\n"
+"PO-Revision-Date: 2014-07-23 21:54-0400\n"
 "Last-Translator: Simgia <josego@simgia.com>\n"
 "Language-Team: Cardume <contato@cardume.art.br>\n"
 "Language: en_US\n"
@@ -231,6 +231,18 @@ msgid ""
 "\">JEO Beta</a> theme"
 msgstr ""
 
+#: ../footer.php:10
+msgid "Partners"
+msgstr "Colaboradores"
+
+#: ../footer.php:11
+msgid "Project by"
+msgstr "Apoyado por"
+
+#: ../footer.php:24
+msgid "Site desenvolvido por:"
+msgstr "Sitio de desarrollado por:"
+
 #: ../functions.php:16
 msgid "Header menu"
 msgstr ""
@@ -310,6 +322,10 @@ msgstr ""
 #: ../loop-report.php:9
 msgid "Visualize"
 msgstr "Visualizar"
+
+#: ../loop-maps.php:9
+msgid "View this map"
+msgstr "Vea este mapa"
 
 #: ../search.php:8 ../section-subheader.php:57
 msgid "Search results for: "

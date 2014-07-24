@@ -7,8 +7,8 @@
 			</nav>
 		</div>
 		<div class="six columns partners">
-			<p><span>Partners</span> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners1.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners2.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners3.png" alt=""></p>
-			<p><span>Project by</span> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt=""> <img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt=""></p>
+			<p><span><?php _e('Partners', 'jeo'); ?></span><a href="http://www.guyra.org.py/index.php?lang=es" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners1.png" alt=""></a><a href="http://infoamazonia.org/es/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners2.png" alt=""></a><a href="http://www.terra-i.org/terra-i.html" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners3.png" alt=""></a></p>
+			<p><span><?php _e('Project by', 'jeo'); ?></span><a href="http://earthjournalism.net/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt=""></a><a href="https://internews.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt=""></a></p>
 		</div>
 	</div>
 	<div class="social">
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="six columns desarrollo">
-			Site desenvolvido por: 
+		    <?php _e('Site desenvolvido por:', 'jeo'); ?>
 		</div>
 	</div>
 </footer>
