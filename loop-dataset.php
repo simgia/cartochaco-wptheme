@@ -20,5 +20,9 @@
 		</li>
 	    <?php endwhile; ?>
 	</ul>
-	<?php if(function_exists('wp_paginate')) wp_paginate(); ?>
+        <div class="twelve columns">
+	    <div class="navigation">
+	        <?php posts_nav_link(); ?>
+	    </div>
+	</div> 
 <?php endif; ?>
