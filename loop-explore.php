@@ -1,5 +1,6 @@
 <?php
     wp_enqueue_script('lockfixed', get_stylesheet_directory_uri() . '/js/jquery.lockfixed.min.js', array('jquery'), '0.1');
+    wp_enqueue_script('chosen_version_nueva', get_stylesheet_directory_uri() . '/lib/chosen.jquery.min_v1.0.0.js', array('jquery'), '1.0.0');
 ?>
 <?php 
     if(have_posts()) : ?>
