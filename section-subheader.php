@@ -9,7 +9,7 @@
     /* elseif(is_front_page() || is_tax('publisher')) : ?>*/
     elseif(false) : ?>
 	<div class="clearfix">
-		<div class="choose-filter">
+		<div class="choose-filter" style="padding: 20px 0 0 0;">
 			<?php
 			$publishers = get_terms('publisher');
 			$title = '<span class="title">' . __('Choose a publisher', 'jeo') . '</span>';

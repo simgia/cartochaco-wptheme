@@ -51,7 +51,7 @@ if(is_front_page()) {
 	</div>
 </div>
 
-<div class="container" style="padding: 20px 0 0 0;">
+<div class="container">
     <div class="twelve columns">
         <?php get_template_part('section', 'subheader'); ?>
     </div>
