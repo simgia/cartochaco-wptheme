@@ -4,7 +4,6 @@ require_once(get_template_directory() . '/inc/admin/settings.php');
 require_once(get_template_directory() . '/inc/core.php');
 require_once(get_template_directory() . '/inc/share-widget.php');
 require_once(get_template_directory() . '/inc/advanced-navigation.php');
-require_once(get_template_directory() . '/inc/advanced-navigation_reports.php');
 
 if(!isset($content_width))
 	$content_width = 760;
