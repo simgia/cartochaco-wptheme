@@ -1,13 +1,6 @@
 <?php get_header(); ?>
 
 <?php if(have_posts()) : the_post(); ?>
-
-	<?php jeo_map(); ?>
-
-	<?php // Comente esta parte para que no salga el mapa que se repite (by josego)
-              // jeo_featured(); 
-        ?>
-
 	<section id="content" class="single-post bblanco">
 		<header class="single-post-header">
 			<div class="container">
@@ -35,7 +28,7 @@
 			</div>
 		</div>
 		<div class="autores">
-			<h2><span>Authors</span></h2>
+			<h2><span><?php _e('Authors', 'jeo'); ?></span></h2>
 			<div class="container">
 				<ul>
 					<li>
