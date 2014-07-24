@@ -29,4 +29,8 @@
 	</section>
 <?php endif; ?>
 
-<p class="submit-story" style="text-align: center; margin-bottom: 0;"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/img_submit.jpg" alt="" width="100%"></a></p>
+<div class="submit-story" style="text-align: center; margin-bottom: 0;">
+	<p>Send you your stories about the Chaco</p>
+	<p>&nbsp;</p>
+	<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/submit_button.png" alt="SUBMIT"></a>
+</div>
