@@ -13,19 +13,6 @@
 			<?php
 			    endif;
 			?>
-			<p>
-                            <?php
-			        $data = get_field('source_url');
-			        if($data) :
-			    ?>
-                            <?php _e('Source', 'jeo'); ?>:
-			    <a href="<?php echo $data; ?>">url</a>
-			    <?php
-			        endif;
-			    ?>  
-                            <br>                          
-			    Terms of use: Lorem Ipsum
-                        </p>
 			<p class="brdTop">
                             <a href="<?php the_permalink(); ?>"><?php _e('read me', 'jeo'); ?></a>
 			</p>
