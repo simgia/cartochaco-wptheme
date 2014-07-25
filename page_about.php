@@ -11,7 +11,7 @@
 		</header>
 		<blockquote class="content">
 			<div class="container">
-			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+			<p>Carto Chaco es una alianza entre organizaciones preocupadas en comunicar y priorizar la relevancia de esta bioregión. De esta manera, esta iniciativa combina el uso de diversas geotecnologias como la visualización amigable de mapas temáticos, reportes mensuales del monitoreo de la vegetación natural y técnicas de geoperiodismo.</p>
 			</div>
 		</blockquote>
 		<div class="container">
