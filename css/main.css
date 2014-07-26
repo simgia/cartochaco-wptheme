@@ -1434,3 +1434,27 @@ blockquote p {
     font-size: 15px !important;
   }
 }
+/**
+ * single-report.php
+ * Author: josego
+ */
+.single-post .title {
+  text-align: center;
+}
+/**
+ * dataset-loop-section
+ * Author: josego
+.dataset-loop-section{
+    .navigation {
+        text-align: center;
+        a {
+            border-radius: 4px;
+	    padding: 10px 20px;
+	    text-decoration: none;
+	    color: #FFF;
+	    background-color: #6f6355;
+	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+ */

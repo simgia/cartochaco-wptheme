@@ -24,5 +24,5 @@
 	    <div class="navigation">
 	        <?php posts_nav_link(); ?>
 	    </div>
-	</div> 
+	</div>
 <?php endif; ?>
