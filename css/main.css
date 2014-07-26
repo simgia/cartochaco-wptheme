@@ -1342,7 +1342,9 @@ blockquote p {
 }
 #colophon .partners span {
   display: inline-block;
-  width: 100px;
+  /*width: 100px;*/
+
+  margin-right: 7px;
 }
 #colophon .social {
   background: url('../img/bgSocialFooter.png') repeat-x left center;
