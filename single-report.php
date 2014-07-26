@@ -5,12 +5,8 @@
         <section id="stage" class="row">
 	    <div class="container">
 	        <div class="twelve columns">
-		    <header class="single-post-header" class="clearfix">
-		        <div class="container">
-			    <div class="twelve columns">
-			        <h1><?php the_title(); ?></h1>
-			    </div>
-			</div>
+		    <header class="post-header">
+			<h1 class="title"><?php the_title(); ?></h1>
 		    </header>
 		</div>
 	    </div>
