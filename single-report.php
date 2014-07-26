@@ -147,6 +147,4 @@
     </article>
 <?php endif; ?>
 
-<?php //get_template_part('section', 'main-widget'); ?>
-
 <?php get_footer(); ?>
