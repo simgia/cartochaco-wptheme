@@ -21,8 +21,10 @@
 	    <?php endwhile; ?>
 	</ul>
         <div class="twelve columns">
-	    <div class="navigation">
-	        <?php posts_nav_link(); ?>
+            <div class="enviar_cont">
+	    	<div class="navigation enviar">
+	            <?php posts_nav_link(); ?>
+	   	</div>
 	    </div>
 	</div>
 <?php endif; ?>
