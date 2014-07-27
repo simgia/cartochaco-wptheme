@@ -68,7 +68,7 @@
 						</p>
 					</li>
                                         <li>
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/Autores/JoseAlberto GonzalezvonSchmeling.png" alt="Jose Alberto Gonzalez von Schmeling" title="Jose Alberto Gonzalez von Schmeling">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/Autores/JoseAlbertoGonzalezvonSchmeling.png" alt="Jose Alberto Gonzalez von Schmeling" title="Jose Alberto Gonzalez von Schmeling">
 						<h5>José Alberto González von Schmeling</h5>
 						<p>
 						   José Alberto González von Schmeling, programador de la Universidad Nacional de Asunción - Facultad Politécnica. Entre sus proyectos actuales tiene un blog Proyectos Beta (desde el 2008) que habla sobre temas relacionados de tecnología, participando activamente en el mundo de Software Libre y Código Abierto, participó en DAL 2013 y varios eventos Nacionales como Internacionales (CLEI, Latinoware, etc), participó y realizó un programa de radio sobre tecnología (tecno PYensis), organizó FLISOL - Asunción 2011 y realizó una charla sobre OSM en FLISOL - Asunción 2014. Actualmente está trabajando en Simgia como desarrollador de aplicaciones Web, GIS, etc. En su tiempo libre se dedica a mejorar sus conocimientos sobre GIS y a ayudar a las comunidades al crecimiento del conocimiento sobre la informática (desarrollo, sistemas operativos (GNU/Linux preferentemente), noticias tecnológicas, etc.
@@ -82,7 +82,7 @@
 						</p>
 					</li>
 					<li>
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/Autores/FabianaGraziella ArevalosGonzalez.png" alt="Fabiana Graziella Arévalos González" title="Fabiana Graziella Arévalos González">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/Autores/FabianaGraziellaArevalosGonzalez.png" alt="Fabiana Graziella Arévalos González" title="Fabiana Graziella Arévalos González">
 						<h5>Fabiana Graziella Arévalos González</h5>
 						<p>
 						    Fabiana Graziella Arévalos González, Ingeniera Ambiental de la Universidad Nacional de Asunción, actualmente forma parte del equipo de  Asociación Guyra Paraguay. Entre los proyectos de los que forma parte se citan el “Proyecto de Reducción de Emisiones por Deforestación y Degradación de los Bosques (REDD+); el Monitoreo Mensual de los Cambios de Uso de la Tierra, Incendios e Inundaciones en el Gran Chaco Americano; Proyecto “Análisis de la deforestación de manglares en áreas importantes para la conservación de las aves”; Monitoreo de Cambio de Uso de la Tierra en 13 Sitios de Áreas de Campañas entre Rare y la Asociación Guyra Paraguay.
