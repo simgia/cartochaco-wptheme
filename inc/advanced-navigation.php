@@ -150,7 +150,7 @@ class cartochaco_AdvancedNav {
 					var min = moment('<?= $before; ?>').toDate();
 					var max = moment('<?= $after; ?>').toDate();
 
-					$('.date-range-inputs .date-from').datepicker({
+					$('.date-from').datepicker({
 						defaultDate: min,
 						changeMonth: true,
 						changeYear: true,
@@ -159,7 +159,7 @@ class cartochaco_AdvancedNav {
 						minDate: min
 					});
 
-					$('.date-range-inputs .date-to').datepicker({
+					$('.date-to').datepicker({
 						defaultDate: max,
 						changeMonth: true,
 						changeYear: true,
