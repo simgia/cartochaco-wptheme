@@ -1,5 +1,5 @@
 <?php if(have_posts()) : ?>
-    <div class="container">
+    <div class="container dataset-loop-section">
         <ul class="">
 	    <?php while(have_posts()) : the_post(); ?>  
 	        <li id="post-<?php the_ID(); ?>" <?php post_class('three columns'); ?>>
@@ -20,11 +20,8 @@
 		</li>
 	    <?php endwhile; ?>
 	</ul>
-        <div class="twelve columns">
-            <div class="enviar_cont">
-	    	<div class="navigation enviar">
-	            <?php posts_nav_link(); ?>
-	   	</div>
-	    </div>
+        <div class="twelve columns navigation">
+            <?php posts_nav_link(); ?>
 	</div>
+    </div>
 <?php endif; ?>

@@ -39,7 +39,7 @@ class CartoChaco_DataSets {
 			'show_in_menu' => true,
 			'has_archive' => true,
 			'menu_position' => 4,
-			'rewrite' => array('slug' => 'datasets', 'with_front' => false)
+			'rewrite' => array('slug' => 'datasets', 'with_front' => true)
 		);
 
 		register_post_type('dataset', $args);

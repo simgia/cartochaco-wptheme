@@ -4,11 +4,12 @@
 	<div id="map-archive" class="gray-page archive-page">
 		<?php 
                     // Muestra 8 dataset por pagina.
-                    /*$wp_query = new WP_Query(); 
+                    $paged = 1;
+                    if(get_query_var('paged')) $paged = get_query_var('paged');
+                    if(get_query_var('page')) $paged = get_query_var('page');
+                    $wp_query = new WP_Query(); 
                     $wp_query->query('showposts=8&post_type=dataset'.'&paged='.$paged); 
-                    if($wp_query->have_posts()) : 
-                    */
-                    if(have_posts()) : 
+                    if($wp_query->have_posts()) :  
                 ?>
 
 			<section id="datasets" class="dataset-loop-section archive-list">

@@ -261,4 +261,15 @@ function cartochaco_setup() {
 	));
 }
 add_action('after_setup_theme', 'cartochaco_setup');
+
+/*
+ * Para mostrar una cantidad determinada de dataset por pagina.
+ */
+function dataset_posts_per_page($query) {
+    if($query->query_vars['post_type'] == 'dataset'){
+        $query->query_vars['posts_per_page'] = 1;
+    }
+    return $query;
+}
+if (!is_admin() ) add_filter('pre_get_posts', 'dataset_posts_per_page');
 ?>
