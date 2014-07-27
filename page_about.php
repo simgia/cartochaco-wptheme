@@ -28,7 +28,7 @@
 			</div>
 		</div>
 		<div class="autores">
-			<h2><span><?php _e('Authors', 'jeo'); ?></span></h2>
+			<h2><span><?php _e('Team', 'jeo'); ?></span></h2>
 			<div class="container">
 				<ul>
 					<li>
