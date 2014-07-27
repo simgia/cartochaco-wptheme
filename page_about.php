@@ -33,7 +33,7 @@
 				<ul>
 					<li>
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/Autores/Dr.LouisReymondin.png" alt="Dr. Louis Reymondin" title="Dr. Louis Reymondin">
-						<h5>Dr. Louis Reymondine</h5>
+						<h5>Dr. Louis Reymondin</h5>
 						<p>
 						    El Dr. Louis Reymondin es un experto en programación de sistemas y desarrollo de software. Tiene un pregrado en Programación de la Universidad HEIG-VD en Suiza y recientemente obtuvo su doctorado en Geografía en el King’s College London, por el desarrollo e implementación de Terra-i, un sistema de alerta temprana para monitorear cambios en el hábitat en toda América Latina. Louis cuenta con más de 8 años de experiencia en la coordinación del proyecto Terra-i así como en el desarrollo de otras aplicaciones basadas en el empleo de la inteligencia artificial y minería de datos para investigaciones sobre las dinámicas entre actividades antropogénicas y el medio ambiente. Su equipo de trabajo está conformado por jóvenes profesionales colombianos que desarrollan componentes específicos del sistema de monitoreo.
 
