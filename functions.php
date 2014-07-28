@@ -65,6 +65,9 @@ function jeo_theme_scripts() {
         // Submit CSS.
         wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3');
 
+        // Parche para el boton de enviar del dataset.
+        wp_register_style('parche_jose_css', get_template_directory_uri() . '/css/parche_jose.css');
+
         // Submit JS.
         wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
 
@@ -84,6 +87,10 @@ function jeo_enqueue_theme_scripts() {
 
         if(wp_style_is('submit_story_css', 'registered'))
 		wp_enqueue_style('submit_story_css');
+        
+        // Parche para el boton de enviar del dataset.  
+        if(wp_style_is('parche_jose_css', 'registered'))
+		wp_enqueue_style('parche_jose_css');
 
 	if(wp_script_is('jeo-site', 'registered'))
 		wp_enqueue_script('jeo-site');

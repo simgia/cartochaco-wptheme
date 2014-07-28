@@ -1,0 +1,20 @@
+/*
+ * Less functions
+ */
+.enviar_parche_jose {
+  float: left;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #6f6355;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.enviar_cont_parche_jose {
+  width: 204px;
+  height: 59px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}

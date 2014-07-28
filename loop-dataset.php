@@ -21,8 +21,8 @@
 	    <?php endwhile; ?>
 	</ul>
         <div class="twelve columns">
-            <div class="enviar_cont">
-	    	<div class="navigation enviar">
+            <div class="enviar_cont_parche_jose">
+	    	<div class="navigation enviar_parche_jose">
 	            <?php posts_nav_link(); ?>
 	   	</div>
 	    </div>
