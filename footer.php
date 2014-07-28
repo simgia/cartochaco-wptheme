@@ -11,7 +11,7 @@
 			<p><span><?php _e('Project by', 'jeo'); ?></span><a href="http://earthjournalism.net/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt="Earth Journalism Network" title="Earth Journalism Network"></a><a href="https://internews.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt="Internews" title="Internews"></a>
                         <p>
                             <a href="http://ciat.cgiar.org/es/" class="cia" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/CIAT_EN-2D_white_p.png" alt="CIAT" title="CIAT"/></a>
-                            <a href="http://foreststreesagroforestry.org/"class="cgiar" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/fta_p.png" alt="CIAT" title="CGIAR"/></a>
+                            <a href="http://foreststreesagroforestry.org/"class="cgiar" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/2_FTA_c_b.png" alt="CIAT" title="CGIAR"/></a>
                         </p>
 		</div>
 	</div>
