@@ -12,7 +12,7 @@ function cartochaco_submit() {
 			<div class="submit-area">
 				<a href="#" class="close-submit-story" title="<?php _e('Close', 'jeo'); ?>">×</a>
 				<h2><?php _e('Submit full story', 'jeo'); ?></h2>
-				<p class="description"><?php _e('Do you have news to share from the Amazon? Contribute to this map by submitting your story. Help broaden the understanding of the global impact of this important region in the world.', 'jeo'); ?></p>
+				<p class="description"><?php _e('Do you have news to share from the Chaco? Contribute to this map by submitting your story. Help broaden the understanding of the global impact of this important region in the world.', 'jeo'); ?></p>
 				<div class="submit-content">
 					<div class="error"></div>
 					<div class="choice">
