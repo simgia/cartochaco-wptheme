@@ -5,6 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #eeeee7;
   min-height: 2000px;
 }
 
@@ -14,6 +15,18 @@ body {
 
 .navbar-static-top {
   margin-bottom: 0px;
+}
+
+.navbar-brand {
+    width: 401px;
+    height: 106px;
+    display: block;
+    background: url('logo.png') no-repeat center;
+    /*text-indent: -99999px;*/
+}
+
+.navbar-nav {
+    margin: 30px;
 }
 
 
