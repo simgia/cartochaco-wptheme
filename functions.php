@@ -74,3 +74,13 @@ function jeo_blank_map_data($data, $map) {
   return $data;
 }
 add_filter('jeo_map_data', 'jeo_blank_map_data', 10, 2);
+
+
+// adding google material-desing icons set
+function md_icons_link() {
+
+		echo '<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">' . "\n";
+    //echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' . "\n";
+    //echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />' . "\n";
+}
+add_action( 'wp_head', 'md_icons_link' );
