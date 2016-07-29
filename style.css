@@ -1,6 +1,6 @@
 /*
 Theme Name: JEO Blank
-Theme URI: http://infoamazonia.org/
+Theme URI: http://cartochaco.org/jeo-theme-child
 Author: InfoAmazonia
 Author URI: http://infoamazonia/
 Description: Blank JEO child theme
@@ -8,4 +8,165 @@ Template: jeo
 Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white, green, light, four-columns, two-columns, responsive-layout, translation-ready, theme-options
+Text Domain:  jeo-theme-child
 */
+
+@import url("../jeo/css/base.css");
+@import url("../jeo/css/main.css");
+@import url("../jeo/css/skeleton.css");
+@import url("../jeo/css/dashicons.css");
+@import url("../jeo/css/lsf.css");
+@import url("../jeo/inc/css/jeo.css");
+
+
+
+/*
+ * Personalización del CSS inicia a partir de acá
+ */
+
+#masthead {
+    position: relative;
+    background: #FFF!important;
+    opacity: 1;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -khtml-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#masthead #masthead-nav {
+    float: right;
+    /* position: absolute; */
+    z-index: 100;
+    margin-top: 10px;
+    background: #FFF;
+    box-shadow: none !important;
+}
+
+#masthead #masthead-nav nav {
+    float: left;
+}
+
+#masthead .site-meta {
+    margin: 40px 0;
+}
+ 
+#masthead #masthead-nav nav ul>li>a {text-transform: uppercase;}
+
+#masthead #searchform {
+    margin: 30px 0 0 0;
+    float: right;
+}
+
+#masthead #searchform input#s {
+    padding: 10px 60px 10px 10px;
+    display: block;
+    margin: 0;
+    border: 0;
+    -webkit-box-shadow: 0;
+    -khtml-box-shadow: 0;
+    -moz-box-shadow: 0;
+    -o-box-shadow: 0;
+    box-shadow: 0;
+    /* text-shadow: 1px 1px 1px rgba(0,0,0,0.5); */
+    color: #666;
+    font-size: 12px;
+    width: 380px;
+    border: 2px solid #F0D8CC;
+    background: url('./img/ico_search.png') no-repeat 420px center;
+}
+
+#masthead .social {
+    float: right;
+    margin: 35px 0 0 10px;
+}
+
+#masthead .social .tw, #masthead .social .fb {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 10px;
+    float: left;
+/*    text-indent: -99999px;*/
+}
+
+#masthead h1 a {
+    width: 301px;
+    height: 66px;
+    display: block;
+    background: url('./img/logo.png') no-repeat;
+    text-indent: -99999px;
+}
+
+
+
+.content_fullwidth{ width: 150%;}
+
+.address-info {
+    float: left;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 10px 20px;
+    width: 91%;
+    margin-bottom: 40px;
+}
+
+.address-info a {text-decoration: none;}
+
+.last {
+    margin-right: 0 !important;
+    clear: right;
+}
+.one_half {
+    width: 48%;
+}
+
+.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth {
+    position: relative;
+    margin-right: 4%;
+    float: left;
+}
+
+.wpcf7-form input[type="text"], input[type="password"], input[type="email"], textarea, select { width: 80%;}
+
+.wpcf7-submit:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.wpcf7-submit {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 9px 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+.size-thumbnail {
+    width: 100%;
+}
+
+.entryhead {
+    display: block;
+    margin: -20px -20px 10px -20px;
+    width: calc(100% + 40px);
+    max-width: calc(100% + 110px);
+    padding: 0 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.imgwrap {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
