@@ -25,37 +25,164 @@ Text Domain:  jeo-theme-child
  * Personalización del CSS inicia a partir de acá
  */
 
+
+/*
+ * Head
+ */
+.displaying-map #masthead {height: 145px;}
+
 #masthead {
-    position: relative;
-    background: #FFF!important;
-    opacity: 1;
-    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -khtml-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+  position: relative;
+  background: #FFF!important;
+  opacity: 1;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -khtml-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
-
-#masthead #masthead-nav {
-    float: right;
-    /* position: absolute; */
-    z-index: 100;
-    margin-top: 10px;
-    background: #FFF;
-    box-shadow: none !important;
-}
-
-#masthead #masthead-nav nav {
-    float: left;
-}
-
 #masthead .site-meta {
-    margin: 40px 0;
+  margin: 40px 0;
 }
- 
-#masthead #masthead-nav nav ul>li>a {text-transform: uppercase;}
+#masthead h1 {
+  width: 301px;
+  height: 66px;
+}
+#masthead h1 a {
+  width: 301px;
+  height: 66px;
+  display: block;
+  background: url('../img/logo.png') no-repeat;
+  text-indent: -99999px;
+}
+#masthead h2 {
+  display: none;
+}
+#masthead #masthead-nav {
+  float: right;
+  /*position: absolute;*/
+
+  z-index: 100;
+  /*top:10px;
+		right: 0;*/
+
+  margin-top: 10px;
+  background: #FFF;
+  box-shadow: none !important;
+  /*.border-radius(3px 3px 0 0);*/
+
+}
+#masthead #masthead-nav nav {
+  float: left;
+}
+#masthead #masthead-nav nav ul {
+  margin: 0;
+  padding: 0;
+}
+#masthead #masthead-nav nav ul > li {
+  margin: 0 1px 0 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  border-right: 1px solid #F0D8CC;
+  background: none;
+}
+#masthead #masthead-nav nav ul > li a {
+  padding: 20px !important;
+}
+#masthead #masthead-nav nav ul > li:hover > a {
+  color: #000;
+  text-shadow: 0 0 0;
+  background: #F0D8CC;
+  /*.border-radius(3px 3px 0 0);*/
+
+}
+#masthead #masthead-nav nav ul > li:hover > ul {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -khtml-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+#masthead #masthead-nav nav ul > li > a {
+  display: block;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #6E6255;
+  text-decoration: none;
+  padding: 20px 30px;
+  /*text-transform: lowercase;*/
+
+  /*.border-radius(3px 3px 0 0);*/
+
+}
+#masthead #masthead-nav nav ul > li > ul {
+  position: absolute;
+  top: 38px;
+  width: 200px;
+  display: none;
+  opacity: 0;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f0f0f0;
+  /*.border-radius(3px 3px 0 0);*/
+
+}
+#masthead #masthead-nav nav ul > li > ul > li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: none;
+}
+#masthead #masthead-nav nav ul > li > ul > li:hover > a {
+  color: #fff;
+  padding-left: 14px;
+  background: #77a832;
+}
+#masthead #masthead-nav nav ul > li > ul > li:hover ul {
+  display: block;
+  opacity: 1;
+}
+#masthead #masthead-nav nav ul > li > ul > li a {
+  border-top: 1px solid #e0e0e0;
+  display: block;
+  padding: 8px 10px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 600;
+}
+#masthead #masthead-nav nav ul > li > ul > li ul {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 0;
+  left: 200px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #f0f0f0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -khtml-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+#masthead #masthead-nav nav ul > li > ul > li ul li {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+#masthead #masthead-nav nav ul > li > ul > li ul li:hover a {
+  background: #77a832;
+  color: #fff;
+}
 
 #masthead #searchform {
     margin: 30px 0 0 0;
@@ -92,6 +219,7 @@ Text Domain:  jeo-theme-child
     margin: 0 0 0 10px;
     float: left;
 /*    text-indent: -99999px;*/
+		color: #F0D8CC;
 }
 
 #masthead h1 a {
@@ -167,6 +295,143 @@ Text Domain:  jeo-theme-child
     max-width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+.posts-section .posts-list article .actions {
+    background: #F0D8CC;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e8c3b0), color-stop(1, #F0D8CC));
+    background: -ms-linear-gradient(bottom, #e8c3b0, #F0D8CC);
+    background: -moz-linear-gradient(center bottom, #e8c3b0 0, #F0D8CC 100%);
+    background: -o-linear-gradient(#F0D8CC, #e8c3b0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0D8CC', endColorstr='#e8c3b0', GradientType=0);
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    /*-webkit-border-radius: 0 0 5px 5px;
+    -khtml-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;*/
+}
+
+.posts-section .posts-list article .actions:hover a:hover, .posts-section .posts-list article .actions:hover button:hover, .posts-section .posts-list article .actions:hover .button:hover, .posts-section .posts-list article .actions:hover input[type=submit]:hover {
+    color: rgba(45,45,45,0.9);
+}
+
+
+/*2px solid #F0D8CC*/
+
+
+/*pie de pagina*/
+
+#colophon {
+  background-color: #6F6355;
+  width: 100%;
+  color: #f0f0f0;
+  padding: 20px 0 15px 0;
+  /*margin-top: 40px;*/
+
+}
+#colophon a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+#colophon a:hover {
+  color: #eee;
+}
+#colophon #footer-nav .menu {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Bitter', serif;
+}
+#colophon #footer-nav .menu > li {
+  /*float: left;*/
+
+  margin-bottom: 5px;
+  background: none;
+  text-align: left;
+}
+#colophon #footer-nav .menu > li > a {
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+
+  display: block;
+  color: #FFF;
+}
+#colophon #footer-nav .menu > li ul {
+  margin: 0;
+  padding: 0;
+}
+#colophon #footer-nav .menu > li ul li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+#colophon .credits {
+  font-size: 11px;
+}
+#colophon .credits p {
+  margin: 0;
+  padding-bottom: 20px;
+	float: left;
+}
+#colophon .partners {
+  padding-top: 50px;
+  font-family: 'Bitter', serif;
+}
+#colophon .partners img {
+  vertical-align: middle;
+}
+#colophon .partners span {
+  display: inline-block;
+  /*width: 100px;*/
+
+  margin-right: 7px;
+}
+
+#colophon .social {
+  background: url('./img/bgSocialFooter.png') repeat-x left center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#colophon .social a {margin-right: 5px;}
+
+#colophon .desarrollo {
+  text-align: right;
+  font-size: 11px;
+}
+
+.cia {
+    margin-left: 120px;
+}
+
+.text_desarrollo {
+    float: left;
+    margin-left: 220px;
+    margin-top: 3px;
+}
+
+
+
+
+.section-title h2, .single-post-header h2, .page-header h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #52483E;
+    text-align: center;
+}
+
+
+.intro .left, .intro .right {
+    float: left;
+    width: 48%;
+    padding: 0 1% 40px 1%;
 }
 
 
