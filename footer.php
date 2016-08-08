@@ -7,8 +7,8 @@
 			</nav>
 		</div>
 		<div class="six columns partners">
-			<p><span><?php _e('Partners', 'jeo'); ?></span><a href="http://www.guyra.org.py/index.php?lang=es" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners1.png" alt="Guyra Paraguay" title="Guyra Paraguay"></a><a href="http://infoamazonia.org/es/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners2.png" alt="Infoamazonia" title="Infoamazonia"></a><a href="http://www.terra-i.org/terra-i.html" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners3.png" alt="terra-i" title="terra-i"></a></p>
-			<p><span><?php _e('Project by', 'jeo'); ?></span><a href="http://earthjournalism.net/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt="Earth Journalism Network" title="Earth Journalism Network"></a><a href="https://internews.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt="Internews" title="Internews"></a>
+			<p><span><?php _e('Colaboradores', 'jeo'); ?></span><a href="http://www.guyra.org.py/index.php?lang=es" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners1.png" alt="Guyra Paraguay" title="Guyra Paraguay"></a><a href="http://infoamazonia.org/es/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners2.png" alt="Infoamazonia" title="Infoamazonia"></a><a href="http://www.terra-i.org/terra-i.html" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners3.png" alt="terra-i" title="terra-i"></a></p>
+			<p><span><?php _e('Apoyado por', 'jeo'); ?></span><a href="http://earthjournalism.net/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project1.png" alt="Earth Journalism Network" title="Earth Journalism Network"></a><a href="https://internews.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/project2.png" alt="Internews" title="Internews"></a>
                         <p>
                             <a href="http://ciat.cgiar.org/es/" class="cia" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/CIAT_EN-2D_white_p.png" alt="CIAT" title="CIAT"/></a>
                             <a href="http://foreststreesagroforestry.org/"class="cgiar" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/2_FTA_c_b.png" alt="CIAT" title="CGIAR"/></a>
@@ -16,8 +16,29 @@
 		</div>
 	</div>
 	<div class="social">
-							<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">
-<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+							<span class="fa-stack fa-lg">
+								<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">
+									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
+<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</a>
+							</span>
+
+							<span class="fa-stack fa-lg">
+								<a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">
+									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
+<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
+									<i class="fa fa-facebook fa-stack-1x"></i>
+								</a>
+							</span>
+
+							<span class="fa-stack fa-lg">
+								<a href="#">
+									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
+<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
+									<i class="fa fa-envelope fa-stack-1x"></i>
+								</a>
+							</span>
 	</div>
 	<div class="container">
 		<div class="six columns">
