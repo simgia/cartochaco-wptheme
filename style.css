@@ -220,7 +220,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 
 #masthead .social {
     float: right;
-    margin: 35px 0 0 10px;
+    margin: 31px 0 0 10px;
 }
 
 #masthead .social .tw, #masthead .social .fb {
@@ -460,7 +460,12 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 
 .icon-background1 {
     color: #fff;
-		background-color: #6f6355;
+    background-color: #6f6355;
+}
+
+.icon-background2 {
+    color: #F0D8CC;
+    background-color: #fff;
 }
 
 .icon-background4 {
@@ -516,6 +521,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
     padding: 20px 0 10px;
     margin: 0 0 20px;
     position: relative;
+box-shadow: none;
 -webkit-box-shadow: none;
 -khtml-box-shadow: none;
 -moz-box-shadow: none;
