@@ -516,6 +516,11 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
     padding: 20px 0 10px;
     margin: 0 0 20px;
     position: relative;
+-webkit-box-shadow: none;
+-khtml-box-shadow: none;
+-moz-box-shadow: none;
+-o-box-shadow: none;
+box-shadow: none);
 }
 
 .section-title h1, .single-post-header h1, .page-header h1 {
@@ -544,7 +549,7 @@ blockquote p {
 
 .autores {
     text-align: center;
-    background: url('../img/bgAutores.png') repeat-x center 50px;
+    background: url('./img/bgAutores.png') repeat-x center 50px;
     padding: 30px 0;
 }
 
@@ -561,4 +566,15 @@ blockquote p {
     float: left;
     margin: 0 10px 20px 0;
     margin: 7px 10px 0px 0;
+}
+
+.page-title {
+    margin-top: 50px;
+}
+
+.archivo {
+    background-color: #F2F4F3;
+    color: #B3C2C5;
+    margin-bottom: 20px;
+    -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
