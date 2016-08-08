@@ -38,3 +38,9 @@
 		</div>
 	</section>
 <?php endif; ?>
+
+<div class="submit-story" style="text-align: center; margin-bottom: 0;">
+	<p><?php _e('Send us your stories about the Chaco', 'jeo'); ?></p>
+	<p>&nbsp;</p>
+	<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/submit_button.png" alt="SUBMIT"></a>
+</div>
