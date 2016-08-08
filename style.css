@@ -127,7 +127,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
   color: #6E6255;
   text-decoration: none;
   padding: 20px 30px;
-  /*text-transform: lowercase;*/
+  text-transform: none;
 
   /*.border-radius(3px 3px 0 0);*/
 
@@ -280,7 +280,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
     background-color: #eee;
     border: 1px solid #ddd;
     padding: 9px 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', sans-serif;
     font-weight: 600;
     border-radius: 4px;
     color: #333;
