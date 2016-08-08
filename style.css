@@ -534,6 +534,14 @@ blockquote {
     margin: 0 0 50px 0;
 }
 
+blockquote p {
+    padding: 20px 100px 30px 100px;
+    color: #54473E;
+    font-size: 22px;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
 .autores {
     text-align: center;
     background: url('../img/bgAutores.png') repeat-x center 50px;
