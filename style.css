@@ -510,3 +510,47 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 .bblanco {
     background-color: #FFF;
 }
+
+.section-title, .single-post-header, .page-header {
+    background: #fefefe;
+    padding: 20px 0 10px;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.section-title h1, .single-post-header h1, .page-header h1 {
+    color: #54473E;
+    text-align: center;
+    font-weight: normal;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+blockquote {
+    background-color: #EFD7CB;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.autores {
+    text-align: center;
+    background: url('../img/bgAutores.png') repeat-x center 50px;
+    padding: 30px 0;
+}
+
+.autores ul {
+    text-align: left;
+    margin: 50px 0;
+}
+
+.autores ul li {
+    margin-bottom: 50px;
+}
+
+.autores ul li img {
+    float: left;
+    margin: 0 10px 20px 0;
+    margin: 7px 10px 0px 0;
+}
