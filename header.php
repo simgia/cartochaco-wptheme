@@ -33,7 +33,7 @@
 							<?php bloginfo('name'); ?>
 						</a>
 					</h1>
-					<!--<h2><?php bloginfo('description'); ?></h2>-->
+					<h2><?php bloginfo('description'); ?></h2>
 				</div>
                 <!-- Comentado por josego. Creo que yo coloque para la traduccion de los idiomas. No recuerdo bien
                 <?php
@@ -45,8 +45,7 @@
 			</div>
 			<div class="eight columns">
 				<div class="social">
-					<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">
-<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">Twitter</a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">Facebook</a>
 				</div>
 				
 				<?php get_search_form(); ?>
