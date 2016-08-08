@@ -506,3 +506,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
   height: 500px;
   border-bottom: 20px solid #333;
 }
+
+.bblanco {
+    background-color: #FFF;
+}
