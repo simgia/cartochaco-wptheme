@@ -1,5 +1,7 @@
 <?php
 
+require_once(STYLESHEETPATH . '/inc/advanced-navigation.php');
+
 /*
  * Clears JEO default front-end styles and scripts
  */
@@ -18,6 +20,8 @@ add_action('wp_enqueue_scripts', 'jeo_blank_scripts', 10);
  * JEO Hooks examples
  * Most common hooks
  */
+
+
 
 // Action right after JEO functionality inits
 function jeo_blank_init() {
