@@ -342,7 +342,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
   width: 100%;
   color: #f0f0f0;
   padding: 20px 0 15px 0;
-  margin-top: -40px;/**/
+  margin-top: 0px;/**/
 
 }
 #colophon a {
@@ -568,6 +568,11 @@ blockquote p {
     margin: 7px 10px 0px 0;
 }
 
+.autores h2 span {
+    background-color: #FFF;
+    padding: 0 50px;
+}
+
 .page-title {
     margin-top: 50px;
 }
@@ -598,3 +603,9 @@ blockquote p {
     color: #B3C2C5;
     text-decoration: none;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter', serif;
+    color: #54473E;
+}
+
