@@ -46,7 +46,19 @@
 			</div>
 			<div class="eight columns">
 				<div class="social">
-					<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">Twitter</a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">Facebook</a>
+<!--					<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">Twitter</a> <a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">Facebook</a>-->
+					<span class="fa-stack fa-lg">
+						<a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">
+							<i class="fa fa-circle fa-stack-2x icon-background2"></i>
+							<i class="fa fa-facebook fa-stack-1x"></i>
+						</a>
+					</span>
+                                        <span class="fa-stack fa-lg">
+                                                <a href="https://www.facebook.com/cartochaco" class="tw" title="Twitter" target="_blank">
+                                                        <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+                                                        <i class="fa fa-twitter fa-stack-1x"></i>
+                                                </a>    
+                                        </span> 
 				</div>
 				
 				<?php get_search_form(); ?>
