@@ -1,16 +1,18 @@
 /*
-Theme Name: Cartochaco
+Theme Name: JEO Blank
 Theme URI: http://cartochaco.org/jeo-theme-child
-Author: simgia
-Author URI: http://www.simgia.com
-Description: Cartochaco Child Theme
+Author: InfoAmazonia
+Author URI: http://infoamazonia/
+Description: Blank JEO child theme
 Template: jeo
 Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, white, green, light, four-columns, two-columns, responsive-layout, translation-ready, theme-options
-Text Domain:  cartochaco
+
 */
+
+/*Text Domain:  jeo-theme-child*/
 
 @import url("../jeo/css/base.css");
 @import url("../jeo/css/main.css");
@@ -29,6 +31,11 @@ Text Domain:  cartochaco
 /*
  * Head
  */
+
+.mapgroup-container {
+    padding-top: 20px;
+}
+
 .displaying-map #masthead {height: 145px;}
 
 #masthead {
@@ -219,7 +226,7 @@ Text Domain:  cartochaco
     margin: 0 0 0 10px;
     float: left;
 /*    text-indent: -99999px;*/
-		color: #F0D8CC;
+		color: #6F6355;
 }
 
 #masthead h1 a {
@@ -331,7 +338,7 @@ Text Domain:  cartochaco
   width: 100%;
   color: #f0f0f0;
   padding: 20px 0 15px 0;
-  /*margin-top: 40px;*/
+  margin-top: -40px;/**/
 
 }
 #colophon a {
@@ -393,13 +400,24 @@ Text Domain:  cartochaco
   margin-right: 7px;
 }
 
+#colophon .social span {
+  display: inline-block;
+  /*width: 100px;*/
+  margin-right: -5px;
+}
+
 #colophon .social {
   background: url('./img/bgSocialFooter.png') repeat-x left center;
   text-align: center;
   margin: 20px 0;
+		color: #6F6355;
 }
 
-#colophon .social a {margin-right: 5px;}
+#colophon .social a{
+	color: #6F6355;
+}
+
+/**/#colophon .social a {margin-right: 5px;}
 
 #colophon .desarrollo {
   text-align: right;
@@ -435,3 +453,52 @@ Text Domain:  cartochaco
 }
 
 
+
+.icon-background1 {
+    color: #fff;
+		background-color: #6f6355;
+}
+
+.icon-background4 {
+    color: #6f6355;
+}
+
+/*#colophon .fa {display: inline;}*/
+
+
+
+/* submit-section */
+
+.submit-story {
+    background: url('./img/img_submit.jpg') no-repeat center center;
+    background-size: 100%;
+    height: 350px;
+    padding-top: 65px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Bitter', serif;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #575757;
+}
+
+.posts-section {
+    background-color: #FFF;
+    padding: 20px 0;
+}
+
+.posts-section .navigation a {
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #6f6355;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.posts-section.featured {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-bottom: 20px solid #333;
+}
