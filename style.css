@@ -614,6 +614,10 @@ blockquote p {
     text-decoration: none;
 }
 
+.single-post .title {
+    text-align: center;
+}
+
 .single-post .container .post-content .post-description iframe {
     display: block;
     width: 600px;
@@ -621,6 +625,11 @@ blockquote p {
     margin: 0 auto;
     border: 2;
     padding: 0 0 30px;
+}
+
+.list-maps li h2 {
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 
