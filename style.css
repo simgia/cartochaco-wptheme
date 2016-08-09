@@ -21,6 +21,8 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 @import url("../jeo/css/lsf.css");
 @import url("../jeo/inc/css/jeo.css");
 
+@import url("./css/submit_story.css");
+
 
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 
@@ -630,6 +632,13 @@ blockquote p {
 .list-maps li h2 {
     font-size: 20px;
     margin-bottom: 0;
+}
+
+.list-maps li:nth-child(2n+1) {
+    clear: both;
+}
+.list-maps li {
+    margin-bottom: 30px;
 }
 
 
