@@ -478,6 +478,10 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 
 /* submit-section */
 
+.post-header {
+    padding: 50px 0 10px;
+}
+
 .submit-story {
     background: url('./img/img_submit.jpg') no-repeat center center;
     background-size: 100%;
@@ -610,8 +614,22 @@ blockquote p {
     text-decoration: none;
 }
 
+.single-post .container .post-content .post-description iframe {
+    display: block;
+    width: 600px;
+    height: 350px;
+    margin: 0 auto;
+    border: 2;
+    padding: 0 0 30px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
     color: #54473E;
+}
+
+h1, h2 {
+    font-weight: 400;
 }
 
