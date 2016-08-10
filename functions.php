@@ -79,6 +79,11 @@ function jeo_blank_map_data($data, $map) {
 }
 add_filter('jeo_map_data', 'jeo_blank_map_data', 10, 2);
 
+function jeo_theme_scripts() {
+
+}
+add_action('wp_enqueue_scripts', 'jeo_theme_scripts', 10, 2);
+
 
 // adding google material-desing icons set
 function md_icons_link() {
@@ -103,6 +108,9 @@ include(STYLESHEETPATH . '/inc/datasets.php');
  * Reports.
  */
 include(STYLESHEETPATH . '/inc/reports.php');
+
+// Submit story.
+include(STYLESHEETPATH . '/inc/submit-story.php');
 
 
 
