@@ -79,62 +79,32 @@ function jeo_blank_map_data($data, $map) {
 }
 add_filter('jeo_map_data', 'jeo_blank_map_data', 10, 2);
 
-function jeo_theme_scripts() {
+function jeo_themeblank_scripts() {
 	// styles
-/*	wp_register_style('jeo-lsf', get_template_directory_uri() . '/css/lsf.css');
-	wp_register_style('jeo-base', get_template_directory_uri() . '/css/base.css', array(), '1.2');
-	wp_register_style('jeo-skeleton', get_template_directory_uri() . '/css/skeleton.css', array('jeo-base'), ‘1.2’);*/
-	wp_register_style('font-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-	/*wp_register_style('jeo-main', get_template_directory_uri() . '/css/main.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), ‘0.0.3’);*/
-
-        /* Chosen */
-	/*wp_register_script('chosen', get_stylesheet_directory_uri() . '/lib/chosen.jquery.min.js', array('jquery'), '1.0.0');
-
-	wp_register_script('jquery-isotope', get_template_directory_uri() . '/lib/jquery.isotope.min.js', array('jquery'), '1.5.25');
-
-	wp_register_script('jeo-site', get_template_directory_uri() . '/js/site.js', array('jquery', 'jquery-isotope’));*/
-
         // Submit CSS.
-        wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3');
-
+ //       wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3')
         // Parche para el boton de enviar del dataset.
         wp_register_style('parche_jose_css', get_template_directory_uri() . '/css/parche_jose.css');
-
         // Submit JS.
         wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
 
-        wp_localize_script('submit-story', 'cartochaco_submit', array(
-		'ajaxurl' => admin_url('admin-ajax.php'),
-		'success_label' => __('Success! Thank you, your story will be reviewed by one of our editors and soon will be online.', 'jeo'),
-		'redirect_label' => __('You\'re being redirect to the home page in 4 seconds.', 'jeo'),
-		'home' => home_url('/'),
-		'error_label' => __('Oops, please try again in a few minutes.', 'jeo')
-	));
 }
-add_action('wp_enqueue_scripts', 'jeo_theme_scripts', 5);
+add_action('wp_enqueue_scripts', 'jeo_themeblank_scripts', 5);
 
-function jeo_enqueue_theme_scripts() {
-	if(wp_style_is('jeo-main', 'registered'))
-		wp_enqueue_style('jeo-main');
+function jeo_enqueue_themeblank_scripts() {
 
-        if(wp_style_is('submit_story_css', 'registered'))
-		wp_enqueue_style('submit_story_css');
+//        if(wp_style_is('submit_story_css', 'registered'))
+//		wp_enqueue_style('submit_story_css');
         
         // Parche para el boton de enviar del dataset.  
         if(wp_style_is('parche_jose_css', 'registered'))
 		wp_enqueue_style('parche_jose_css');
 
-	if(wp_script_is('jeo-site', 'registered'))
-		wp_enqueue_script('jeo-site');
-       
         if(wp_script_is('submit-story', 'registered'))
 		wp_enqueue_script('submit-story');
 
-	if (is_singular())
-	 	wp_enqueue_script( "comment-reply" );
-
 }
-add_action('wp_enqueue_scripts', 'jeo_enqueue_theme_scripts', 12);
+add_action('wp_enqueue_scripts', 'jeo_enqueue_themeblank_scripts', 12);
 
 
 // adding google material-desing icons set
