@@ -641,6 +641,15 @@ blockquote p {
     margin-bottom: 30px;
 }
 
+.nuestras_noticias {
+    width: 351px;
+    height: 82px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
