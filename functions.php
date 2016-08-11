@@ -204,13 +204,13 @@ add_action( 'init', 'custom_post_type', 0 );*/
 /*
  * Para mostrar una cantidad determinada de dataset por pagina.
  */
-function dataset_posts_per_page($query) {
+/*function dataset_posts_per_page($query) {
     if($query->query_vars['post_type'] == 'dataset'){
         $query->query_vars['posts_per_page'] = 1;
     }
     return $query;
 }
-if (!is_admin() ) add_filter('pre_get_posts', 'dataset_posts_per_page');
+if (!is_admin() ) add_filter('pre_get_posts', 'dataset_posts_per_page’);*/
 
 
 ?>
