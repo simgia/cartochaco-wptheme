@@ -139,69 +139,14 @@ include(STYLESHEETPATH . '/inc/submit-story.php');
 
 
 
-
-/*
-* Creating a function to create our CPT
-*/
- 
-/*function custom_post_type() {
- 
-// Set UI labels for Custom Post Type
-    $labels = array(
-        'name'                => _x( 'Reportes', 'Post Type General Name', 'jeo-blank' ),
-        'singular_name'       => _x( 'Reporte', 'Post Type Singular Name', 'jeo-blank' ),
-        'menu_name'           => __( 'Reportes', 'jeo-blank' ),
-        'parent_item_colon'   => __( 'Parent Movie', 'jeo-blank' ),
-        'all_items'           => __( 'Reportes', 'jeo-blank' ),
-        'view_item'           => __( 'View Report', 'jeo-blank' ),
-        'add_new_item'        => __( 'Add New Report', 'jeo-blank' ),
-        'add_new'             => __( 'Add Report', 'jeo-blank' ),
-        'edit_item'           => __( 'Edit Report', 'jeo-blank' ),
-        'update_item'         => __( 'Update Report', 'jeo-blank' ),
-        'search_items'        => __( 'Search Report', 'jeo-blank' ),
-        'not_found'           => __( 'Not Found', 'jeo-blank' ),
-        'not_found_in_trash'  => __( 'Not found in Trash', 'jeo-blank' ),
-    );
-     
-// Set other options for Custom Post Type
-     
-    $args = array(
-        'label'               => __( 'reportes', 'jeo-blank' ),
-        'description'         => __( 'Movie news and reviews', 'jeo-blank' ),
-        'labels'              => $labels,
-        // Features this CPT supports in Post Editor
-        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-        // You can associate this CPT with a taxonomy or custom taxonomy.
-        'taxonomies'          => array( 'genres' ),
-        /* A hierarchical CPT is like Pages and can have
-        * Parent and child items. A non-hierarchical CPT
-        * is like Posts.
-        / 
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'capability_type'     => 'page',
-    );
-     
-    // Registering your Custom Post Type
-    register_post_type( 'reportes', $args );
- 
+// Remove page from search result.
+function cartochaco_remove_page_from_search($query) {
+	if($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+	return $query;
 }
- 
-/* Hook into the 'init' action so that the function
-* Containing our post type registration is not
-* unnecessarily executed.
-/
- 
-add_action( 'init', 'custom_post_type', 0 );*/
+add_filter('pre_get_posts', 'cartochaco_remove_page_from_search');
 
 
 /*
