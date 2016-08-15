@@ -131,6 +131,9 @@ include(STYLESHEETPATH . '/inc/datasets.php');
  */
 include(STYLESHEETPATH . '/inc/reports.php');
 
+// Geocode box.
+include(STYLESHEETPATH . '/inc/geocode-box.php');
+
 // Submit story.
 include(STYLESHEETPATH . '/inc/submit-story.php');
 
