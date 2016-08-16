@@ -92,7 +92,7 @@ function jeo_themeblank_scripts() {
         // Submit CSS.
  //       wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3')
         // Parche para el boton de enviar del dataset.
-        wp_register_style('parche_jose_css', get_template_directory_uri() . '/css/parche_jose.css');
+        wp_register_style('parche_jose_css', get_stylesheet_directory_uri() . '/css/parche_jose.css');
         // Submit JS.
         wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
 
