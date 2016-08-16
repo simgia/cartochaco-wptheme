@@ -121,15 +121,6 @@ add_action( 'wp_head', 'md_icons_link' );
 
 
 
-/*
- * Datasets.
- */
-include(STYLESHEETPATH . '/inc/datasets.php');
-
-/*
- * Reports.
- */
-include(STYLESHEETPATH . '/inc/reports.php');
 
 // Geocode box.
 include(STYLESHEETPATH . '/inc/geocode-box.php');
@@ -148,6 +139,62 @@ function cartochaco_remove_page_from_search($query) {
 }
 add_filter('pre_get_posts', 'cartochaco_remove_page_from_search');
 
+// Metaboxes.
+include(STYLESHEETPATH . '/inc/metaboxes/metaboxes.php');
+
+// Register taxonomies.
+include(STYLESHEETPATH . '/inc/taxonomies.php');
+
+// Taxonomy meta.
+include(STYLESHEETPATH . '/inc/taxonomies-meta.php');
+
+
+function cartochaco_before_embed() {
+	remove_action('wp_footer', 'cartochaco_submit');
+	remove_action('wp_footer', 'cartochaco_geocode_box');
+}
+add_action('jeo_before_embed', 'cartochaco_before_embed');
+
+function cartochaco_embed_type($post_types) {
+	if(get_query_var('embed')) {
+		$post_types = 'map';
+	}
+	return $post_types;
+}
+add_filter('jeo_featured_map_type', 'cartochaco_embed_type');
+
+
+/*
+ * Advanced Custom Fields.
+ */
+function cartochaco_acf_dir() {
+	return get_stylesheet_directory_uri() . '/inc/acf/';
+}
+add_filter('acf/helpers/get_dir', 'cartochaco_acf_dir');
+
+function cartochaco_acf_date_time_picker_dir() {
+	return cartochaco_acf_dir() . '/add-ons/acf-field-date-time-picker/';
+}
+add_filter('acf/add-ons/date-time-picker/get_dir', 'cartochaco_acf_date_time_picker_dir');
+
+function cartochaco_acf_repeater_dir() {
+	return cartochaco_acf_dir() . '/add-ons/acf-repeater/';
+}
+add_filter('acf/add-ons/repeater/get_dir', 'cartochaco_acf_repeater_dir');
+
+define('ACF_LITE', true);
+require_once(STYLESHEETPATH . '/inc/acf/acf.php');
+
+
+/*
+ * Datasets.
+ */
+include(STYLESHEETPATH . '/inc/datasets.php');
+
+/*
+ * Reports.
+ */
+include(STYLESHEETPATH . '/inc/reports.php');
 
 /*
  * Para mostrar una cantidad determinada de dataset por pagina.
