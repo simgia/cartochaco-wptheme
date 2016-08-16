@@ -17,25 +17,22 @@
 	</div>
 	<div class="social">
 							<span class="fa-stack fa-lg">
-								<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">
+								<a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">
 									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
-<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
-									<i class="fa fa-twitter fa-stack-1x"></i>
+									<i class="fa fa-facebook fa-stack-1x"></i>
 								</a>
 							</span>
 
 							<span class="fa-stack fa-lg">
-								<a href="https://www.facebook.com/cartochaco" class="fb" title="Facebook" target="_blank">
+								<a href="https://twitter.com/cartochaco" class="tw" title="Twitter" target="_blank">
 									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
-<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
-									<i class="fa fa-facebook fa-stack-1x"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
 								</a>
 							</span>
 
 							<span class="fa-stack fa-lg">
 								<a href="#">
 									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
-<!--									<i class="fa fa-circle-thin fa-stack-2x icon-background4" style="border: 0;"></i>-->
 									<i class="fa fa-envelope fa-stack-1x"></i>
 								</a>
 							</span>
