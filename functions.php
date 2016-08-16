@@ -80,6 +80,14 @@ function jeo_blank_map_data($data, $map) {
 add_filter('jeo_map_data', 'jeo_blank_map_data', 10, 2);
 
 function jeo_themeblank_scripts() {
+
+        /* Chosen */
+	wp_register_script('chosen', get_stylesheet_directory_uri() . '/lib/chosen.jquery.min.js', array('jquery'), '1.0.0');
+
+	wp_register_script('jquery-isotope', get_template_directory_uri() . '/lib/jquery.isotope.min.js', array('jquery'), '1.5.25');
+
+	wp_register_script('jeo-site', get_template_directory_uri() . '/js/site.js', array('jquery', 'jquery-isotope'));
+
 	// styles
         // Submit CSS.
  //       wp_register_style('submit_story_css', get_template_directory_uri() . '/css/submit_story.css', array('jeo-skeleton', 'jeo-lsf', 'font-opensans'), '0.0.3')

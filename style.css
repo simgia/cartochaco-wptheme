@@ -313,6 +313,12 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 .posts-section .posts-list article {
     position: relative;
     width: 280px;
+background: none;
+-webkit-box-shadow: none;
+-khtml-box-shadow: none;
+-moz-box-shadow: none;
+-o-box-shadow: none;
+box-shadow:none;
 }
 
 /*.posts-section .posts-list article .actions {
