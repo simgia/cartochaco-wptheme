@@ -310,7 +310,12 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
     overflow: hidden;
 }
 
-.posts-section .posts-list article .actions {
+.posts-section .posts-list article {
+    position: relative;
+    width: 280px;
+}
+
+/*.posts-section .posts-list article .actions {
     background: #F0D8CC;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e8c3b0), color-stop(1, #F0D8CC));
     background: -ms-linear-gradient(bottom, #e8c3b0, #F0D8CC);
@@ -327,7 +332,7 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
     -moz-border-radius: 0 0 5px 5px;
     -o-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;*/
-}
+}*/
 
 .posts-section .posts-list article .actions:hover a:hover, .posts-section .posts-list article .actions:hover button:hover, .posts-section .posts-list article .actions:hover .button:hover, .posts-section .posts-list article .actions:hover input[type=submit]:hover {
     color: rgba(45,45,45,0.9);

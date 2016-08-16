@@ -2,8 +2,8 @@
 	<section class="posts-section">
 		<div class="container">
 			<ul class="posts-list">
-				<?php while(have_posts()) : the_post(); ?>
-					<li id="post-<?php the_ID(); ?>" <?php post_class('three columns'); ?>>
+				<?php while(have_posts()) : the_post(); ?>   
+					<li id="post-<?php the_ID(); ?>" <?php post_class('four columns'); ?>>
 						<article id="post-<?php the_ID(); ?>">
 
 							<section class="post-content">
