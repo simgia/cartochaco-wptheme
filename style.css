@@ -497,7 +497,7 @@ box-shadow:none;
 
 .posts-section .posts-list article .post-header {
     background: rgba(255, 255, 255, 0.7);
-    position: absolute;
+    /*position: absolute;*/
     padding: 10px 0 20px 0;
     bottom: 0;
     left: 0;
