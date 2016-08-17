@@ -537,6 +537,10 @@ box-shadow:none;
     padding: 20px 0;
 }
 
+.dataset-loop-section {
+    padding: 20px 0;
+}
+
 .posts-section .navigation a, .dataset-loop-section .navigation a {
     border-radius: 4px;
     padding: 10px 20px;

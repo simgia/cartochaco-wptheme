@@ -22,7 +22,7 @@
 	</ul>
         <div class="twelve columns">
             
-	    	<div class="navigation enviar_parche_jose">
+	    	<div class="navigation">
 	            <?php posts_nav_link(); ?>
 	   	</div>
 	    
