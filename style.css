@@ -224,18 +224,8 @@ html, body {
     background: url('./img/ico_search.png') no-repeat 420px center;
 }
 
-#masthead .social {
-    float: right;
-    margin: 31px 0 0 10px;
-}
-
 #masthead .social .tw, #masthead .social .fb {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin: 0 0 0 10px;
-    float: left;
-   text-indent: 99999px;/* 6F6355*/
+/* 6F6355*/
     color: #fff;
 }
 
@@ -561,18 +551,6 @@ box-shadow:none;
     background-color: #FFF;
 }
 
-.section-title, .single-post-header, .page-header {
-    background: #fefefe;
-    padding: 20px 0 10px;
-    margin: 0 0 20px;
-    position: relative;
-box-shadow: none;
--webkit-box-shadow: none;
--khtml-box-shadow: none;
--moz-box-shadow: none;
--o-box-shadow: none;
-box-shadow: none);
-}
 
 .section-title h1, .single-post-header h1, .page-header h1 {
     color: #54473E;
