@@ -68,22 +68,20 @@
 		</section>
 
 		<div class="share">
-			<span>Share: 
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>" title="Compartir esta noticia en Facebook" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_fb3.gif" alt=""></a>
-                            <a href="https://twitter.com/home?status=<?php the_title() ?>&nbsp;<?php echo wp_get_shortlink(); ?> v&iacute;a @cartochaco" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_tw3.gif" alt=""></a> 
-                            <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false; "title="Share on Google +!"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico_Gplus.gif" alt=""></a>
+			<span>Share:
+
+                                <div class="fa-stack fa-lg">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>" title="Compartir esta noticia en Facebook" target="_blank" class=“fb”>
+                                                <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+                                                <i class="fa fa-facebook fa-stack-1x"></i>
+                                        </a>
+                                </div>
+
 
 				<div class="fa-stack fa-lg">
 					<a href="https://twitter.com/home?status=<?php the_title() ?>&nbsp;<?php echo wp_get_shortlink(); ?> v&iacute;a @cartochaco" class="tw" title="Twitter" target="_blank">
 						<i class="fa fa-circle fa-stack-2x icon-background2"></i>
 						<i class="fa fa-twitter fa-stack-1x"></i>
-					</a>
-				</div>
-
-				<div class="fa-stack fa-lg">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>" title="Compartir esta noticia en Facebook" target="_blank" class=“fb”>
-						<i class="fa fa-circle fa-stack-2x icon-background2"></i>
-						<i class="fa fa-facebook fa-stack-1x"></i>
 					</a>
 				</div>
 

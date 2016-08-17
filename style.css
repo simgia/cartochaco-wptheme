@@ -471,7 +471,7 @@ box-shadow:none;
 }
 
 .icon-background2 {
-    color: #F0D8CC;
+    color: #E0A094;
     background-color: #fff;
 }
 
@@ -714,3 +714,6 @@ h1, h2 {
     font-weight: 400;
 }
 
+.fa-stack.fa-lg a {
+    color: white;
+}
