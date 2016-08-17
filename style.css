@@ -537,7 +537,7 @@ box-shadow:none;
     padding: 20px 0;
 }
 
-.posts-section .navigation a {
+.posts-section .navigation a, .dataset-loop-section .navigation a {
     border-radius: 4px;
     padding: 10px 20px;
     text-decoration: none;
@@ -683,6 +683,10 @@ blockquote p {
     margin-right: auto;
     overflow: hidden;
     text-align: center;
+}
+
+.dataset-loop-section .navigation {
+  text-align: center;
 }
 
 .enviar_parche_jose {
