@@ -118,7 +118,7 @@ add_action('wp_enqueue_scripts', 'jeo_enqueue_themeblank_scripts', 12);
 // adding google material-desing icons set
 function md_icons_link() {
     echo '<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">' . "\n";
-    //echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href=“img/favicon.ico" />' . "\n";
 
 	// text domain
 	load_child_theme_textdomain('jeo-blank', get_stylesheet_directory() . '/languages');
