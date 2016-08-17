@@ -504,6 +504,17 @@ box-shadow:none;
     width: 100%;
 }
 
+.posts-section .posts-list li {
+  /*margin-bottom: 20px;*/
+
+  height: 350px;
+  overflow: hidden;
+}
+
+.posts-section .posts-list li:nth-child(3n+1) {
+  clear: both;
+}
+
 .submit-story {
     background: url('./img/img_submit.jpg') no-repeat center center;
     background-size: 100%;
