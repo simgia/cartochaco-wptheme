@@ -717,3 +717,12 @@ h1, h2 {
 .fa-stack.fa-lg a {
     color: white;
 }
+
+.icon-background-header {
+    color: #F0D8CC;
+    background-color: #fff;
+}
+
+.header-sh {
+    font-size: 0.8em !important;
+}
