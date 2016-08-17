@@ -14,12 +14,21 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 
 /*Text Domain:  jeo-theme-child*/
 
-@import url("../jeo/css/base.css");
+/*@import url("../jeo/css/base.css");
 @import url("../jeo/css/main.css");
 @import url("../jeo/css/skeleton.css");
 @import url("../jeo/css/dashicons.css");
 @import url("../jeo/css/lsf.css");
 @import url("../jeo/inc/css/jeo.css");
+
+@import url("./css/submit_story.css”);*/
+
+@import url("./css/base.css");
+@import url("./css/main.css");
+@import url("./css/skeleton.css");
+@import url("./css/dashicons.css");
+@import url("./css/lsf.css");
+@import url("./inc/css/jeo.css");
 
 @import url("./css/submit_story.css");
 
@@ -32,6 +41,10 @@ Tags: black, white, green, light, four-columns, two-columns, responsive-layout, 
 /*
  * Personalización del CSS inicia a partir de acá
  */
+
+html, body {
+    font: 16px/18px "Open Sans","Helvetica","Arial",sans-serif;
+}
 
 
 /*
@@ -381,7 +394,7 @@ box-shadow:none;
 }
 #colophon #footer-nav .menu > li > a {
   font-weight: 700;
-  /*text-transform: uppercase;*/
+  text-transform: none;
 
   display: block;
   color: #FFF;
