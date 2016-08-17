@@ -235,7 +235,7 @@ html, body {
     height: 24px;
     margin: 0 0 0 10px;
     float: left;
-/*    text-indent: -99999px; 6F6355*/
+   text-indent: 99999px;/* 6F6355*/
     color: #fff;
 }
 
@@ -721,10 +721,10 @@ blockquote p {
   text-decoration: none;
 }
 
-.share .fa-stack span {
+/*.share .fa-stack span {
     background-color: #FFF;
     padding: 0 5px;
-}
+}*/
 
 
 h1, h2, h3, h4, h5, h6 {
