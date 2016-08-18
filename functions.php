@@ -213,6 +213,27 @@ include(STYLESHEETPATH . '/inc/datasets.php');
  */
 include(STYLESHEETPATH . '/inc/reports.php');
 
+function jeoblank_setup() {
+	add_theme_support('post-thumbnails');
+	add_image_size('post-thumb', 360, 121, true);
+	add_image_size('map-thumb', 200, 200, true);
+
+	// text domain
+	load_child_theme_textdomain(‘jeo_blank’, get_stylesheet_directory() . '/languages');
+
+	//sidebars
+	register_sidebar(array(
+		'name' => __('Main widgets', 'jeo'),
+		'id' => 'main-sidebar',
+		'description' => __('Widgets used on front and inside pages.', 'jeo'),
+		'before_widget' => '<div class="four columns row">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+}
+add_action('after_setup_theme', 'jeoblank_setup');
+
 /*
  * Para mostrar una cantidad determinada de dataset por pagina.
  */
