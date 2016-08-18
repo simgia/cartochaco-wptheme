@@ -16,7 +16,7 @@
             <div class="section-title">
                 <div class="container">
                     <div class="twelve columns">
-                        <h3 style="text-align: center;"><?php _e('Stories on', 'jeo'); ?> &ldquo;<?php the_title(); ?>&ldquo;</h3>
+                        <h3 style="text-align: center;"><?php _e('Stories on', 'jeo-blank'); ?> &ldquo;<?php the_title(); ?>&ldquo;</h3>
                         <div class="query-actions">
                             <?php
                             global $wp_query;

@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="six columns desarrollo">
-		    <span class="text_desarrollo"><?php _e('Site desenvolvido por:', 'jeo'); ?></span>
+		    <span class="text_desarrollo"><?php _e('Site desenvolvido por:', 'jeo-blank'); ?></span>
                     <a href="http://www.simgia.com/ESP/index.php" style="margin-left:10px;" target="_blank">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/simgia_C.png" alt="simgia" title="simgia"/>
                     </a>
