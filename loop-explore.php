@@ -34,7 +34,7 @@
                 <div class="nuestras_noticias">
 		    <div class="query-actions">
 		        <h3>
-		            <?php _e('Use our stories', 'jeo'); ?>
+		            <?php _e('Use our stories', 'jeo-blank'); ?>
                         </h3>
 		        <?php
 		            global $wp_query;

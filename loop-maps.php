@@ -15,7 +15,7 @@
 					</header>
 					<section>
 						<?php the_excerpt(); ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="button"><?php _e('View this map', 'jeo'); ?></a>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="button"><?php _e('View this map', 'jeo-blank'); ?></a>
 					</section>
 				</div>
 			</article>

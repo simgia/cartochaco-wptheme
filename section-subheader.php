@@ -2,7 +2,7 @@
     if(get_query_var('cartochaco_advanced_nav')) :
 
 		?>
-		<h1 class="title"><?php _e('Advanced filters', 'jeo'); ?></h1>
+		<h1 class="title"><?php _e('Advanced filters', 'jeo-blank'); ?></h1>
 		<?php
 		cartochaco_adv_nav_filters();
  

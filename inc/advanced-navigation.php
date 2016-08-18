@@ -91,8 +91,8 @@ class cartochaco_AdvancedNav {
 		<form class="advanced-nav-filters row">
 			<div class="three columns alpha">
 				<div class="search-input adv-nav-input">
-					<label for="<?php echo $this->prefix; ?>s"><?php _e('Text search', 'jeo'); ?></label>
-					<input type="text" id="<?php echo $this->prefix; ?>s" name="<?php echo $this->prefix; ?>s" placeholder="<?php _e('Type your search here', 'jeo'); ?>" value="<?php echo (isset($_GET[$this->prefix . 's'])) ? $_GET[$this->prefix . 's'] : ''; ?>" />
+					<label for="<?php echo $this->prefix; ?>s"><?php _e('Text search', 'jeo-blank'); ?></label>
+					<input type="text" id="<?php echo $this->prefix; ?>s" name="<?php echo $this->prefix; ?>s" placeholder="<?php _e('Type your search here', 'jeo-blank'); ?>" value="<?php echo (isset($_GET[$this->prefix . 's'])) ? $_GET[$this->prefix . 's'] : ''; ?>" />
 				</div>
 			</div>
 			<?php
@@ -102,7 +102,7 @@ class cartochaco_AdvancedNav {
 				?>
 				<div class="three columns">
 					<div class="category-input adv-nav-input">
-						<label for="<?php echo $this->prefix; ?>category"><?php _e('Categories', 'jeo'); ?></label>
+						<label for="<?php echo $this->prefix; ?>category"><?php _e('Categories', 'jeo-blank'); ?></label>
 						<select id="<?php echo $this->prefix; ?>category" name="<?php echo $this->prefix; ?>category[]" multiple>
 							<?php foreach($categories as $category) : ?>
 								<option value="<?php echo $category->term_id; ?>" <?php if(in_array($category->term_id, $active_cats)) echo 'selected'; ?>><?php echo $category->name; ?></option>
@@ -120,24 +120,24 @@ class cartochaco_AdvancedNav {
 			?>
 			<div class="two columns">
 				<div class="date-input adv-nav-input">
-					<label for="<?php echo $this->prefix; ?>date_start"><?php _e('Date range', 'jeo'); ?></label>
+					<label for="<?php echo $this->prefix; ?>date_start"><?php _e('Date range', 'jeo-blank'); ?></label>
 
 					<label class="sublabel" for="<?php echo $this->prefix; ?>date_start" style="display: none;"><?php _e('From', 'jeo'); ?></label>
-					<input type="text" class="date-from" id="<?php echo $this->prefix; ?>date_start" name="<?php echo $this->prefix; ?>date_start" value="<?php echo (isset($_GET[$this->prefix . 'date_start'])) ? $_GET[$this->prefix . 'date_start'] : ''; ?>" placeholder="<?php _e('From', 'jeo'); ?>"/>
+					<input type="text" class="date-from" id="<?php echo $this->prefix; ?>date_start" name="<?php echo $this->prefix; ?>date_start" value="<?php echo (isset($_GET[$this->prefix . 'date_start'])) ? $_GET[$this->prefix . 'date_start'] : ''; ?>" placeholder="<?php _e('From', 'jeo-blank'); ?>"/>
 				</div>
 			</div>
 			<div class="two columns">
 				<div class="date-input adv-nav-input">
 
 					<label class="sublabel" for="<?php echo $this->prefix; ?>date_end" >&nbsp;</label>
-					<input type="text" class="date-to" id="<?php echo $this->prefix; ?>date_end" name="<?php echo $this->prefix; ?>date_end" value="<?php echo (isset($_GET[$this->prefix . 'date_end'])) ? $_GET[$this->prefix . 'date_end'] : ''; ?>" placeholder="<?php _e('To', 'jeo'); ?>"/>
+					<input type="text" class="date-to" id="<?php echo $this->prefix; ?>date_end" name="<?php echo $this->prefix; ?>date_end" value="<?php echo (isset($_GET[$this->prefix . 'date_end'])) ? $_GET[$this->prefix . 'date_end'] : ''; ?>" placeholder="<?php _e('To', 'jeo-blank'); ?>"/>
 
 				</div>
 			</div>
 			<div class="one columns">
 				<div class="date-input adv-nav-input">
 					<label for="" class="sublabel">&nbsp;</label>
-					<input type="submit" class="button" value="<?php _e('Filter', 'jeo'); ?>" />
+					<input type="submit" class="button" value="<?php _e('Filter', 'jeo-blank'); ?>" />
 				</div>
 			</div>
 		</form>
