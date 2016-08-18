@@ -97,6 +97,14 @@ function jeo_themeblank_scripts() {
         // Submit JS.
         wp_register_script('submit-story', get_stylesheet_directory_uri() . '/js/submit-story.js', array('jquery'), '0.1.1');
 
+        wp_localize_script('submit-story', 'cartochaco_submit', array(
+		'ajaxurl' => admin_url('admin-ajax.php'),
+		'success_label' => __('Success! Thank you, your story will be reviewed by one of our editors and soon will be online.', 'jeo'),
+		'redirect_label' => __('You\'re being redirect to the home page in 4 seconds.', 'jeo'),
+		'home' => home_url('/'),
+		'error_label' => __('Oops, please try again in a few minutes.', 'jeo')
+	));
+
 }
 add_action('wp_enqueue_scripts', 'jeo_themeblank_scripts', 5);
 
