@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php
-$page_title = __('Share a map', 'jeo');
+$page_title = __('Share a map', 'jeo-blank');
 $map = false;
 if($_GET['map_id']) {
 	$map = get_post($_GET['map_id']);
@@ -59,11 +59,11 @@ if($allow_layers) {
 					<div class='inner'>
 						<?php if(!$map) : ?>
 							<h4>
-								<?php _e('Choose a map', 'jeo'); ?>
+								<?php _e('Choose a map', 'jeo-blank'); ?>
 								<a class='tip' href='#'>
 									?
 									<span class="popup arrow-left">
-										<?php _e('Choose any map from the list', 'jeo'); ?>
+										<?php _e('Choose any map from the list', 'jeo-blank'); ?>
 									</span>
 								</a>
 							</h4>
@@ -74,7 +74,7 @@ if($allow_layers) {
 									<?php endforeach; ?>
 								</select>
 								<?php if($allow_layers) : ?>
-									<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'jeo'); ?></a>
+									<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'jeo-blank'); ?></a>
 								<?php endif; ?>
 							</div>
 						<?php elseif($map && $layers) : ?>
@@ -114,7 +114,7 @@ if($allow_layers) {
 						<?php else : ?>
 							<h4>&nbsp;</h4>
 							<input type="hidden" id="map_id" name="map_id" value="<?php echo $map->ID; ?>" />
-							<p><a class="button" href="<?php echo jeo_get_share_url(); ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
+							<p><a class="button" href="<?php echo jeo_get_share_url(); ?>"><?php _e('View all maps', 'jeo-blank'); ?></a></p>
 						<?php endif; ?>
 					</div>
 				</div>
@@ -127,11 +127,11 @@ if($allow_layers) {
 				<div class="section four columns">
 					<div class="inner">
 						<h4>
-							<?php _e('Filter content', 'jeo'); ?>
+							<?php _e('Filter content', 'jeo-blank'); ?>
 							<a class="tip" href="#">
 								?
 								<span class="popup arrow-left">
-									<?php _e('Filter the content displayed on the map through our options', 'jeo'); ?>
+									<?php _e('Filter the content displayed on the map through our options', 'jeo-blank'); ?>
 								</span>
 							</a>
 						</h4>
@@ -146,9 +146,9 @@ if($allow_layers) {
 										</optgroup>
 									<?php endif; ?>
 								<?php endif; ?>
-								<optgroup label="<?php _e('General content', 'jeo'); ?>">
-									<option value="latest"><?php if(!isset($_GET['map_id'])) _e('Content from the map', 'jeo'); else _e('Latest content', 'jeo'); ?></option>
-									<option value="map-only"><?php _e('No content (map only)', 'jeo'); ?></option>
+								<optgroup label="<?php _e('General content', 'jeo-blank'); ?>">
+									<option value="latest"><?php if(!isset($_GET['map_id'])) _e('Content from the map', 'jeo-blank'); else _e('Latest content', 'jeo'); ?></option>
+									<option value="map-only"><?php _e('No content (map only)', 'jeo-blank'); ?></option>
 								</optgroup>
 								<?php foreach($taxonomies as $taxonomy) :
 									$taxonomy = get_taxonomy($taxonomy);
@@ -173,18 +173,18 @@ if($allow_layers) {
 				<div class='section size four columns'>
 					<div class='inner'>
 						<h4>
-							<?php _e('Width & Height', 'jeo'); ?>
+							<?php _e('Width & Height', 'jeo-blank'); ?>
 							<a class='tip' href='#'>
 								?
 								<span class="popup arrow-left">
-									<?php _e('Select the width and height proportions you would like to embed to be.', 'jeo'); ?>
+									<?php _e('Select the width and height proportions you would like to embed to be.', 'jeo-blank'); ?>
 								</span>
 							</a>
 						</h4>
 						<ul id='sizes' class='sizes clearfix'>
-							<li><a href='#' data-size='small' data-width='480' data-height='300'><?php _e('Small', 'jeo'); ?></a></li>
-							<li><a href='#' data-size='medium' data-width='600' data-height='400'><?php _e('Medium', 'jeo'); ?></a></li>
-							<li><a href='#' data-size='large' data-width='960' data-height='480' class='active'><?php _e('Large', 'jeo'); ?></a></li>
+							<li><a href='#' data-size='small' data-width='480' data-height='300'><?php _e('Small', 'jeo-blank'); ?></a></li>
+							<li><a href='#' data-size='medium' data-width='600' data-height='400'><?php _e('Medium', 'jeo-blank'); ?></a></li>
+							<li><a href='#' data-size='large' data-width='960' data-height='480' class='active'><?php _e('Large', 'jeo-blank'); ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -198,11 +198,11 @@ if($allow_layers) {
 						<h4>
 							<div class='popup arrow-right'>
 							</div>
-							<?php _e('HTML Output', 'jeo'); ?>
+							<?php _e('HTML Output', 'jeo-blank'); ?>
 							<a class='tip' href='#'>
 								?
 								<span class="popup arrow-left">
-									<?php _e('Copy and paste this code into an HTML page to embed with it\'s current settings and location', 'jeo'); ?>
+									<?php _e('Copy and paste this code into an HTML page to embed with it\'s current settings and location', 'jeo-blank'); ?>
 								</span>
 							</a>
 						</h4>
@@ -215,11 +215,11 @@ if($allow_layers) {
 						<h4>
                             <div class='popup arrow-right'>
                             </div>
-                            <?php _e('URL', 'jeo'); ?>
+                            <?php _e('URL', 'jeo-blank'); ?>
                             <a class='tip' href='#'>
                                 ?
                                 <span class="popup arrow-left">
-                                    <?php _e('Get the original to use as a link or a custom embed.', 'jeo'); ?>
+                                    <?php _e('Get the original to use as a link or a custom embed.', 'jeo-blank'); ?>
                                 </span>
                             </a>
                         </h4>
@@ -232,11 +232,11 @@ if($allow_layers) {
 						<h4>
 							<div class="popup arrow-right">
 							</div>
-							<?php _e('Share', 'jeo'); ?>
+							<?php _e('Share', 'jeo-blank'); ?>
 							<a class="tip" href="#">
 								?
 								<span class="popup arrow-left">
-									<?php _e('Share this map, with it\'s current settings and location, on your social network', 'jeo'); ?>
+									<?php _e('Share this map, with it\'s current settings and location, on your social network', 'jeo-blank'); ?>
 								</span>
 							</a>
 						</h4>
