@@ -295,7 +295,7 @@ msgstr "Buscar historias en este editor"
 msgid "Latest articles"
 msgstr ""
 
-#: ../loop.php:33
+#: ../loop.php:35
 msgid "Send us your stories about the Chaco"
 msgstr "Envíanos sus historias sobre el Chaco"
 
@@ -322,6 +322,10 @@ msgstr ""
 #: ../loop-explore.php:45
 msgid "Get GeoJSON"
 msgstr ""
+
+#: ../loop-explore.php:59
+msgid "Send us your stories about the Chaco"
+msgstr "Envíanos sus historias sobre el Chaco"
 
 #: ../loop-report.php:9
 msgid "Visualize"

@@ -6,7 +6,7 @@
                     <div class="archivo">
 		        <h4><?php echo get_the_title(); ?></h4>
 			<p class="brdTop">
-                            <a href="<?php the_permalink(); ?>"><?php _e('Visualize', 'jeo'); ?></a>
+                            <a href="<?php the_permalink(); ?>"><?php _e('Visualize', 'jeo-blank'); ?></a>
 			</p>
                     </div>
 		</li>
