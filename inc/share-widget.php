@@ -171,3 +171,4 @@ function jeo_get_share_widget_taxonomies() {
 	global $jeo_share_widget;
 	return $jeo_share_widget->get_taxonomies();
 }
+?>
