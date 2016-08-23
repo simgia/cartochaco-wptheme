@@ -2,7 +2,7 @@
 
 require_once(get_template_directory() . '/inc/admin/settings.php');
 require_once(get_template_directory() . '/inc/core.php');
-require_once(STYLESHEETPATH . '/inc/share-widget.php');
+require_once(get_template_directory() . '/inc/share-widget.php');
 require_once(STYLESHEETPATH . '/inc/advanced-navigation.php');
 
 /*
@@ -132,7 +132,7 @@ function md_icons_link() {
     echo '<link rel="shortcut icon" type="image/x-icon" href=“img/favicon.ico" />' . "\n";
 
 	// text domain
-	load_child_theme_textdomain('jeo-blank', get_stylesheet_directory() . '/languages');
+	//load_child_theme_textdomain('jeo-blank', get_stylesheet_directory() . '/languages');
 
 }
 add_action( 'wp_head', 'md_icons_link' );
@@ -221,7 +221,7 @@ function jeoblank_setup() {
 	add_image_size('map-thumb', 200, 200, true);
 
 	// text domain
-	load_child_theme_textdomain(‘jeo_blank’, get_stylesheet_directory() . '/languages');
+	load_child_theme_textdomain('jeo', get_stylesheet_directory() . '/languages');
 
 	//sidebars
 	register_sidebar(array(
