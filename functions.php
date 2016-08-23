@@ -1,7 +1,6 @@
 <?php
 
-require_once(STYLESHEETPATH . '/inc/core.php');
-require_once(STYLESHEETPATH . '/inc/share-widget.php');
+//require_once(STYLESHEETPATH . '/inc/share-widget.php');
 require_once(STYLESHEETPATH . '/inc/advanced-navigation.php');
 
 /*
