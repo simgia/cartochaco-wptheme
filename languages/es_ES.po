@@ -98,6 +98,10 @@ msgstr "d/m/Y"
 msgid "Share a map"
 msgstr "Compartir mapa"
 
+#: ../content-share.php:4 ../../jeo/inc/share-widget.php:159
+msgid "Share a map"
+msgstr "Compartir mapa"
+
 #: ../content-share.php:9 ../content-share.php:225
 msgid "Share"
 msgstr "Compartir"

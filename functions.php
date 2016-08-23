@@ -221,7 +221,7 @@ function jeoblank_setup() {
 	add_image_size('map-thumb', 200, 200, true);
 
 	// text domain
-	load_child_theme_textdomain('jeo', get_stylesheet_directory() . '/languages');
+	load_child_theme_textdomain('jeo-blank', get_stylesheet_directory() . '/languages');
 
 	//sidebars
 	register_sidebar(array(
