@@ -1,6 +1,8 @@
 <?php
 
-//require_once(STYLESHEETPATH . '/inc/share-widget.php');
+require_once(get_template_directory() . '/inc/admin/settings.php');
+require_once(get_template_directory() . '/inc/core.php');
+require_once(STYLESHEETPATH . '/inc/share-widget.php');
 require_once(STYLESHEETPATH . '/inc/advanced-navigation.php');
 
 /*
