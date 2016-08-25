@@ -317,10 +317,10 @@ h6 {
   /*text-indent: -99999px;*/
 }
 #masthead .social .tw {
-  background: url('../img/ico_tw.png') no-repeat 0 0;
+  /*background: url('../img/ico_tw.png') no-repeat 0 0;*/
 }
 #masthead .social .fb {
-  background: url('../img/ico_fb.png') no-repeat 0 0;
+  /*background: url('../img/ico_fb.png') no-repeat 0 0;*/
 }
 #masthead #searchform {
   margin: 30px 0 0 0;
