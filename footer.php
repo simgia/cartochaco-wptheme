@@ -30,8 +30,8 @@
 								</a>
 							</span>
 
-							<span class="fa-stack fa-lg">
-								<a href="#">
+							<span class="fa-stack fa-lg" title="Email" target="_blank">
+								<a href="mailto:contact@infoamazonia.org">
 									<i class="fa fa-circle fa-stack-2x icon-background1"></i>
 									<i class="fa fa-envelope fa-stack-1x"></i>
 								</a>
@@ -49,7 +49,7 @@
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/simgia_C.png" alt="simgia" title="simgia"/>
                     </a>
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/mas.png"/>
-                    <a href="http://cardume.github.io/jeo/" target="_blank">
+                    <a href="http://www.jeowp.org/" target="_blank">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/jeo_banner_c.png" alt="JEO" title="JEO"/>
                     </a>
 		</div>
